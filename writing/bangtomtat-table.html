@@ -1,0 +1,105 @@
+<!DOCTYPE html><html lang="vi"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Table — Bảng số liệu — IELTS Writing Task 1</title>
+<style>
+:root{
+  --paper:#FDFDFB; --paper-line:#EEF1F5; --ink:#252830; --ink-soft:#666C78;
+  --pink:#C93A97; --pink-bg:#FBE0F1; --pink-soft:#FDEFF5;
+  --blue:#2456A6; --blue-bg:#E3ECFA;
+  --green:#2E8B57; --green-bg:#E4F4EA;
+  --orange:#C9700F; --orange-bg:#FBEBD6;
+  --red:#C0362C; --red-bg:#FBE3E1;
+  --purple:#6D4AA6; --purple-bg:#EEE7F8;
+  --radius:12px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Roboto','Segoe UI',system-ui,sans-serif;color:var(--ink);font-size:16px;line-height:1.7;background:var(--paper);padding-bottom:80px}
+.wrap{max-width:920px;margin:0 auto;padding:0 18px}
+.hero{text-align:center;padding:34px 0 8px}
+.hero .kicker{letter-spacing:3px;font-size:13px;font-weight:700;color:var(--purple)}
+.hero h1{font-size:38px;color:var(--ink);font-weight:800;line-height:1.1;margin-top:4px}
+.hero .sub{font-size:15px;color:var(--ink-soft);margin-top:10px;max-width:640px;margin-left:auto;margin-right:auto}
+.hero .meta{margin-top:10px;font-size:12.5px;color:var(--ink-soft)}
+
+.nav{position:sticky;top:0;z-index:30;background:rgba(253,253,251,.97);backdrop-filter:blur(5px);padding:10px 0;border-bottom:2px solid var(--pink-bg);margin-bottom:8px}
+.nav .row{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
+.nav a{text-decoration:none;background:#fff;border:1.5px solid #E4C8DA;border-radius:999px;padding:5px 13px;font-size:12.5px;font-weight:700;color:var(--pink)}
+.nav a:hover{background:var(--pink-soft)}
+.nav a.home{border-color:var(--purple);color:var(--purple)}
+
+/* dạng section */
+.type{scroll-margin-top:64px;margin:40px 0 0}
+.type-head{display:flex;align-items:center;gap:14px;background:var(--purple);color:#fff;border-radius:var(--radius) var(--radius) 0 0;padding:16px 22px}
+.type-head .no{background:#fff;color:var(--purple);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:19px;flex:0 0 auto}
+.type-head h2{font-size:24px;font-weight:800;line-height:1.15}
+.type-head .en{font-size:13px;font-weight:600;opacity:.85;margin-top:2px}
+.type-body{border:2px solid var(--purple-bg);border-top:none;border-radius:0 0 var(--radius) var(--radius);padding:6px 22px 22px;background:#fff}
+
+/* block trong mỗi dạng */
+.blk{margin:20px 0 0}
+.blk h3{font-size:16.5px;font-weight:800;color:var(--ink);display:flex;align-items:center;gap:9px;padding-bottom:6px;border-bottom:2px solid #EFEFEF;margin-bottom:10px}
+.blk h3 .ic{width:24px;height:24px;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;flex:0 0 auto}
+.ic.b1{background:var(--blue-bg)} .ic.b2{background:var(--green-bg)} .ic.b3{background:var(--purple-bg)}
+.ic.b4{background:var(--orange-bg)} .ic.b5{background:var(--pink-bg)} .ic.b6{background:var(--red-bg)}
+
+.def{background:var(--pink-soft);border-left:4px solid var(--pink);border-radius:6px;padding:12px 16px;font-size:15px}
+.key{background:#FFF8E6;border:1px solid #F0DFA6;border-radius:8px;padding:11px 15px;font-size:14px;margin-top:10px}
+.key b{color:var(--orange)}
+
+ul{padding-left:20px;margin:4px 0}
+li{margin:5px 0}
+.tight li{margin:3px 0}
+.eg{color:var(--green);font-style:italic}
+.term{color:var(--blue);font-weight:600}
+.warn{color:var(--red);font-weight:700}
+
+/* structure 4 đoạn */
+.steps{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:8px}
+.step{border:1.5px solid #E8E8E8;border-radius:10px;padding:13px 16px;font-size:14px}
+.step .sh{font-size:13px;font-weight:800;letter-spacing:.4px;color:var(--purple);margin-bottom:5px}
+.step .sh b{background:var(--purple);color:#fff;border-radius:5px;padding:1px 7px;margin-right:6px;font-size:12px}
+.step .frame{display:block;background:#F6F4FB;border:1px dashed #C9BEE6;border-radius:6px;padding:6px 10px;margin-top:6px;font-family:'Consolas',monospace;font-size:12.5px;color:#4a3a7a}
+
+/* table */
+table{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0}
+th,td{border:1px solid #E7E7E7;padding:7px 11px;text-align:left;vertical-align:top}
+th{background:var(--pink-soft);font-size:12.5px;letter-spacing:.3px}
+td:first-child{font-weight:600;color:var(--ink-soft);white-space:nowrap}
+
+/* do/don't */
+.dd{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:6px}
+.dd .col{border-radius:10px;padding:12px 16px;font-size:14px}
+.dd .do{background:var(--green-bg);border:1.5px solid var(--green)}
+.dd .dont{background:var(--red-bg);border:1.5px solid var(--red)}
+.dd h4{font-size:14px;margin-bottom:6px}
+.dd .do h4{color:var(--green)} .dd .dont h4{color:var(--red)}
+.dd ul{padding-left:18px}
+
+.rule{background:var(--red-bg);border:1.5px solid var(--red);border-radius:8px;padding:11px 15px;font-size:14px;margin-top:10px}
+.rule b{color:var(--red)}
+.check{background:var(--green-bg);border:1.5px solid var(--green);border-radius:8px;padding:11px 15px;font-size:14px;margin-top:10px}
+.check b{color:var(--green)}
+.check table td:first-child{color:var(--green);font-weight:800;width:44px}
+
+@media(max-width:640px){
+  .hero h1{font-size:28px}
+  .steps,.dd{grid-template-columns:1fr}
+  table{display:block;overflow-x:auto}
+}
+
+.nav a.cur{background:var(--purple);color:#fff;border-color:var(--purple)}
+.filehero{text-align:center;padding:26px 0 4px}
+.filehero .kicker{letter-spacing:3px;font-size:12px;font-weight:700;color:var(--purple)}
+.filehero h1{font-size:30px;color:var(--ink);font-weight:800;line-height:1.15;margin-top:4px}
+.filehero .sub{font-size:14px;color:var(--ink-soft);margin-top:6px}
+</style></head><body>
+<header class="filehero wrap">
+  <div class="kicker">IELTS WRITING TASK 1 · CẨM NANG THEO DẠNG</div>
+  <h1>Table — Bảng số liệu</h1>
+  <div class="sub">Chọn lọc & gom nhóm số</div>
+</header>
+<nav class="nav"><div class="wrap row"><a class="home" href="00-nen-chung.html">★ Nền chung</a><a class="" href="01-line-graph.html">1·Line</a><a class="" href="02-bar-chart.html">2·Bar</a><a class="" href="03-pie-chart.html">3·Pie</a><a class=" cur" href="04-table.html">4·Table</a><a class="" href="05-mixed-charts.html">5·Mixed</a><a class="" href="06-process.html">6·Process</a><a class="" href="07-map.html">7·Map</a></div></nav>
+<main class="wrap" style="padding-top:6px">
+<section class="type" style="margin-top:12px" id="table"><div class="type-head"><span class="no">4</span><div><h2>TABLE — Bảng số liệu</h2><div class="en">No visual · selecting & grouping matters most</div></div></div><div class="type-body"><div class="def"><b>Table</b> — bảng số liệu, không có hình trực quan. Vì mắt không "thấy" xu hướng ngay, <b>kỹ năng chọn lọc &amp; gom nhóm số quan trọng hơn</b>. Cũng chia xu hướng (nhiều mốc) vs so sánh (một thời điểm).</div><div class="key"><b>🔑 Đọc số để tìm hình:</b> tự dò cao nhất / thấp nhất từng cột, tăng/giảm từng hàng. Nhiều chỉ số → mỗi chỉ số có thể có ĐƠN VỊ khác nhau (\$ / năm / % / calo) — nêu đúng đơn vị.</div><div class="blk"><h3><span class="ic b3">🏗️</span>Cấu trúc 4 đoạn</h3><div class="steps"><div class="step"><div class="sh"><b>1</b>INTRO</div>Gộp tên chỉ số bằng umbrella (<i>socio-economic indicators</i>).</div><div class="step"><div class="sh"><b>2</b>OVERVIEW</div>Nhóm/đối tượng cao nhất &amp; thấp nhất toàn bảng. Không số.</div><div class="step"><div class="sh"><b>3</b>BODY 1</div>Nhóm chỉ số 1 (hoặc nhóm đối tượng 1) — so sánh ngang.</div><div class="step"><div class="sh"><b>4</b>BODY 2</div>Nhóm chỉ số 2 (hoặc nhóm đối tượng 2).</div></div></div><div class="blk"><h3><span class="ic b4">🔤</span>Từ vựng đặc thù table</h3><b>Hai cách chia đoạn (đều hợp lệ):</b> theo <b>chỉ số</b> (mỗi đoạn 1–2 chỉ số × mọi đối tượng), HOẶC theo <b>nhóm đối tượng</b> (đoạn 1 nhóm cao, đoạn 2 nhóm thấp).<br><b>Cụm:</b> <span class="term">head the table (for) · considerably ahead of · a dramatic gap to · in terms of · … respectively · higher/lower than · the lowest of all</span>.<br><b>Table có 2 mốc:</b> dùng thêm kho tăng/giảm + giới từ số liệu (increase from…to ≠ by…to).</div><div class="dd"><div class="col do"><h4>✔ NÊN</h4><ul class=""><li>Chọn 5–7 số đắt, đặt trong so sánh</li><li>Nêu đúng đơn vị từng chỉ số</li><li>Dùng "respectively" để liệt kê gọn nhiều số</li></ul></div><div class="col dont"><h4>✘ TRÁNH</h4><ul class=""><li>Đọc hết mọi ô như đọc bảng cửu chương</li><li>Table 1 năm mà dùng rise/fall</li><li>Lẫn đơn vị giữa các chỉ số</li></ul></div></div><div class="check"><b>✅ CHECKLIST 4 TIÊU CHÍ</b><table><tr><th></th><th>Tự kiểm tra trước khi nộp</th></tr><tr><td>TA</td><td>Overview nêu cao/thấp nhất toàn bảng, không số? Báo cáo đủ chỉ số × đối tượng?</td></tr><tr><td>CC</td><td>Chia đoạn theo chỉ số HOẶC nhóm đối tượng, rõ tín hiệu?</td></tr><tr><td>LR</td><td>Dùng head the table / in terms of / respectively? Đúng đơn vị mỗi chỉ số?</td></tr><tr><td>GRA</td><td>Table 1 năm: so sánh không trend. 2 mốc: giới từ from…to ≠ by…to?</td></tr></table></div></div></section>
+</main>
+</body></html>
