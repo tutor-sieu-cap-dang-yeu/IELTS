@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="vi"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Line Graph — Biểu đồ đường — IELTS Writing Task 1</title>
+<title>Line Graph — IELTS Writing Task 1 (Band 8.0)</title>
 <style>
 :root{
   --paper:#FDFDFB; --paper-line:#EEF1F5; --ink:#252830; --ink-soft:#666C78;
@@ -14,93 +14,313 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Roboto','Segoe UI',system-ui,sans-serif;color:var(--ink);font-size:16px;line-height:1.7;background:var(--paper);padding-bottom:80px}
-.wrap{max-width:920px;margin:0 auto;padding:0 18px}
-.hero{text-align:center;padding:34px 0 8px}
-.hero .kicker{letter-spacing:3px;font-size:13px;font-weight:700;color:var(--purple)}
-.hero h1{font-size:38px;color:var(--ink);font-weight:800;line-height:1.1;margin-top:4px}
-.hero .sub{font-size:15px;color:var(--ink-soft);margin-top:10px;max-width:640px;margin-left:auto;margin-right:auto}
-.hero .meta{margin-top:10px;font-size:12.5px;color:var(--ink-soft)}
+.wrap{max-width:940px;margin:0 auto;padding:0 18px}
+.filehero{text-align:center;padding:30px 0 6px}
+.filehero .kicker{letter-spacing:3px;font-size:12px;font-weight:700;color:var(--purple)}
+.filehero h1{font-size:34px;color:var(--ink);font-weight:800;line-height:1.12;margin-top:5px}
+.filehero .sub{font-size:14.5px;color:var(--ink-soft);margin-top:8px;max-width:660px;margin-left:auto;margin-right:auto}
+.filehero .band{display:inline-block;margin-top:10px;background:var(--purple-bg);color:var(--purple);font-weight:700;font-size:13px;border-radius:999px;padding:4px 16px}
 
-.nav{position:sticky;top:0;z-index:30;background:rgba(253,253,251,.97);backdrop-filter:blur(5px);padding:10px 0;border-bottom:2px solid var(--pink-bg);margin-bottom:8px}
+.nav{position:sticky;top:0;z-index:30;background:rgba(253,253,251,.97);backdrop-filter:blur(5px);padding:9px 0;border-bottom:2px solid var(--pink-bg);margin-bottom:10px}
 .nav .row{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
-.nav a{text-decoration:none;background:#fff;border:1.5px solid #E4C8DA;border-radius:999px;padding:5px 13px;font-size:12.5px;font-weight:700;color:var(--pink)}
+.nav a{text-decoration:none;background:#fff;border:1.5px solid #E4C8DA;border-radius:999px;padding:5px 12px;font-size:12px;font-weight:700;color:var(--pink)}
 .nav a:hover{background:var(--pink-soft)}
 .nav a.home{border-color:var(--purple);color:var(--purple)}
+.nav a.cur{background:var(--purple);color:#fff;border-color:var(--purple)}
 
-/* dạng section */
-.type{scroll-margin-top:64px;margin:40px 0 0}
-.type-head{display:flex;align-items:center;gap:14px;background:var(--purple);color:#fff;border-radius:var(--radius) var(--radius) 0 0;padding:16px 22px}
-.type-head .no{background:#fff;color:var(--purple);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:19px;flex:0 0 auto}
-.type-head h2{font-size:24px;font-weight:800;line-height:1.15}
-.type-head .en{font-size:13px;font-weight:600;opacity:.85;margin-top:2px}
-.type-body{border:2px solid var(--purple-bg);border-top:none;border-radius:0 0 var(--radius) var(--radius);padding:6px 22px 22px;background:#fff}
+/* section (mục 1..5) */
+.sec{scroll-margin-top:60px;margin:26px 0 0;border:2px solid var(--purple-bg);border-radius:var(--radius);overflow:hidden}
+.sec-head{display:flex;align-items:center;gap:13px;background:var(--purple);color:#fff;padding:14px 20px}
+.sec-head .no{background:#fff;color:var(--purple);width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:17px;flex:0 0 auto}
+.sec-head h2{font-size:20px;font-weight:800;line-height:1.15}
+.sec-body{background:#fff;padding:8px 20px 20px}
 
-/* block trong mỗi dạng */
-.blk{margin:20px 0 0}
-.blk h3{font-size:16.5px;font-weight:800;color:var(--ink);display:flex;align-items:center;gap:9px;padding-bottom:6px;border-bottom:2px solid #EFEFEF;margin-bottom:10px}
-.blk h3 .ic{width:24px;height:24px;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;flex:0 0 auto}
-.ic.b1{background:var(--blue-bg)} .ic.b2{background:var(--green-bg)} .ic.b3{background:var(--purple-bg)}
-.ic.b4{background:var(--orange-bg)} .ic.b5{background:var(--pink-bg)} .ic.b6{background:var(--red-bg)}
-
-.def{background:var(--pink-soft);border-left:4px solid var(--pink);border-radius:6px;padding:12px 16px;font-size:15px}
-.key{background:#FFF8E6;border:1px solid #F0DFA6;border-radius:8px;padding:11px 15px;font-size:14px;margin-top:10px}
+.def{background:var(--pink-soft);border-left:4px solid var(--pink);border-radius:6px;padding:12px 16px;font-size:15px;margin-top:14px}
+.key{background:#FFF8E6;border:1px solid #F0DFA6;border-radius:8px;padding:11px 15px;font-size:14px;margin-top:12px}
 .key b{color:var(--orange)}
+.note{background:var(--blue-bg);border:1px solid #BFD3EE;border-radius:8px;padding:11px 15px;font-size:14px;margin-top:12px}
+.note b{color:var(--blue)}
 
-ul{padding-left:20px;margin:4px 0}
-li{margin:5px 0}
+h3.blk{font-size:16px;font-weight:800;color:var(--ink);display:flex;align-items:center;gap:9px;padding-bottom:6px;border-bottom:2px solid #EFEFEF;margin:18px 0 10px}
+h3.blk .ic{width:24px;height:24px;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;flex:0 0 auto;background:var(--blue-bg)}
+h4.sub{font-size:14px;font-weight:800;color:var(--purple);margin:14px 0 4px;letter-spacing:.2px}
+
+ul{padding-left:20px;margin:4px 0}li{margin:5px 0}
 .tight li{margin:3px 0}
 .eg{color:var(--green);font-style:italic}
 .term{color:var(--blue);font-weight:600}
 .warn{color:var(--red);font-weight:700}
+.vn{color:var(--ink-soft);font-size:13px}
 
-/* structure 4 đoạn */
-.steps{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:8px}
-.step{border:1.5px solid #E8E8E8;border-radius:10px;padding:13px 16px;font-size:14px}
-.step .sh{font-size:13px;font-weight:800;letter-spacing:.4px;color:var(--purple);margin-bottom:5px}
-.step .sh b{background:var(--purple);color:#fff;border-radius:5px;padding:1px 7px;margin-right:6px;font-size:12px}
-.step .frame{display:block;background:#F6F4FB;border:1px dashed #C9BEE6;border-radius:6px;padding:6px 10px;margin-top:6px;font-family:'Consolas',monospace;font-size:12.5px;color:#4a3a7a}
+table{width:100%;border-collapse:collapse;font-size:13.5px;margin:8px 0}
+th,td{border:1px solid #E7E7E7;padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--pink-soft);font-size:12px;letter-spacing:.3px}
+td.lbl{font-weight:700;color:var(--ink-soft);white-space:nowrap;width:1%}
 
-/* table */
-table{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0}
-th,td{border:1px solid #E7E7E7;padding:7px 11px;text-align:left;vertical-align:top}
-th{background:var(--pink-soft);font-size:12.5px;letter-spacing:.3px}
-td:first-child{font-weight:600;color:var(--ink-soft);white-space:nowrap}
+/* 4-para */
+.para{border:1.5px solid #E8E8E8;border-radius:10px;padding:14px 16px;margin:12px 0;background:#FCFCFE}
+.para .ph{font-size:13.5px;font-weight:800;letter-spacing:.3px;color:var(--purple);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.para .ph b{background:var(--purple);color:#fff;border-radius:6px;padding:2px 9px;font-size:12px}
+.frame{display:block;background:#F6F4FB;border:1px dashed #C9BEE6;border-radius:6px;padding:8px 12px;margin:8px 0;font-family:'Consolas',monospace;font-size:12.5px;color:#4a3a7a;line-height:1.6}
+.led{margin:8px 0 4px;font-size:13.5px}
+.led b{color:var(--green)}
+.mini-h{font-size:12.5px;font-weight:800;color:var(--ink-soft);letter-spacing:.4px;margin:10px 0 3px;text-transform:uppercase}
 
-/* do/don't */
 .dd{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:6px}
 .dd .col{border-radius:10px;padding:12px 16px;font-size:14px}
 .dd .do{background:var(--green-bg);border:1.5px solid var(--green)}
 .dd .dont{background:var(--red-bg);border:1.5px solid var(--red)}
 .dd h4{font-size:14px;margin-bottom:6px}
-.dd .do h4{color:var(--green)} .dd .dont h4{color:var(--red)}
+.dd .do h4{color:var(--green)}.dd .dont h4{color:var(--red)}
 .dd ul{padding-left:18px}
-
-.rule{background:var(--red-bg);border:1.5px solid var(--red);border-radius:8px;padding:11px 15px;font-size:14px;margin-top:10px}
+.rule{background:var(--red-bg);border:1.5px solid var(--red);border-radius:8px;padding:11px 15px;font-size:14px;margin-top:12px}
 .rule b{color:var(--red)}
-.check{background:var(--green-bg);border:1.5px solid var(--green);border-radius:8px;padding:11px 15px;font-size:14px;margin-top:10px}
-.check b{color:var(--green)}
-.check table td:first-child{color:var(--green);font-weight:800;width:44px}
+
+.check{margin-top:6px}
+.check table td.crit{color:var(--green);font-weight:800;width:52px;background:var(--green-bg)}
+.band-tag{font-size:11px;font-weight:700;color:var(--purple);background:var(--purple-bg);border-radius:5px;padding:1px 7px;margin-left:4px}
 
 @media(max-width:640px){
-  .hero h1{font-size:28px}
-  .steps,.dd{grid-template-columns:1fr}
+  .filehero h1{font-size:26px}
+  .dd{grid-template-columns:1fr}
   table{display:block;overflow-x:auto}
 }
-
-.nav a.cur{background:var(--purple);color:#fff;border-color:var(--purple)}
-.filehero{text-align:center;padding:26px 0 4px}
-.filehero .kicker{letter-spacing:3px;font-size:12px;font-weight:700;color:var(--purple)}
-.filehero h1{font-size:30px;color:var(--ink);font-weight:800;line-height:1.15;margin-top:4px}
-.filehero .sub{font-size:14px;color:var(--ink-soft);margin-top:6px}
 </style></head><body>
+
 <header class="filehero wrap">
   <div class="kicker">IELTS WRITING TASK 1 · CẨM NANG THEO DẠNG</div>
   <h1>Line Graph — Biểu đồ đường</h1>
-  <div class="sub">Xu hướng theo thời gian</div>
+  <div class="sub">Xu hướng theo thời gian. Kiến thức neo <b>Band 8.0</b> cho cả 4 tiêu chí (TA · CC · LR · GRA), rút từ skill <b>ielts-writing-task1-sample</b>.</div>
+  <div class="band">🎯 Chuẩn phân tích: Band 8.0 · 4 tiêu chí</div>
 </header>
-<nav class="nav"><div class="wrap row"><a class="home" href="00-nen-chung.html">★ Nền chung</a><a class=" cur" href="01-line-graph.html">1·Line</a><a class="" href="02-bar-chart.html">2·Bar</a><a class="" href="03-pie-chart.html">3·Pie</a><a class="" href="04-table.html">4·Table</a><a class="" href="05-mixed-charts.html">5·Mixed</a><a class="" href="06-process.html">6·Process</a><a class="" href="07-map.html">7·Map</a></div></nav>
-<main class="wrap" style="padding-top:6px">
-<section class="type" style="margin-top:12px" id="line"><div class="type-head"><span class="no">1</span><div><h2>LINE GRAPH — Biểu đồ đường</h2><div class="en">Trends over time · always dynamic</div></div></div><div class="type-body"><div class="def"><b>Line graph</b> — một hay nhiều đường theo thời gian. Luôn là dạng <b>xu hướng</b>: tả cái gì tăng/giảm/dao động qua các mốc.</div><div class="key"><b>🔑 Trọng tâm:</b> chọn lọc điểm đắt (đầu · cuối · đỉnh · đáy · giao nhau), mô tả xu hướng + so sánh các đường — KHÔNG kể từng năm.</div><div class="blk"><h3><span class="ic b3">🏗️</span>Cấu trúc 4 đoạn</h3><div class="steps"><div class="step"><div class="sh"><b>1</b>INTRO</div>Paraphrase đề. Thời gian có thể quá khứ HOẶC tương lai → chọn thì đúng.</div><div class="step"><div class="sh"><b>2</b>OVERVIEW</div>Xu hướng chung (tăng/giảm/dao động) + đường nổi bật nhất (cao nhất / đổi mạnh nhất). Không số.</div><div class="step"><div class="sh"><b>3</b>BODY 1</div>Nhóm đường cùng xu hướng, HOẶC nửa đầu giai đoạn — nêu mốc đầu, biến động, cực trị.</div><div class="step"><div class="sh"><b>4</b>BODY 2</div>Nhóm đường ngược/còn lại, HOẶC nửa sau giai đoạn.</div></div></div><div class="blk"><h3><span class="ic b4">🔤</span>Từ vựng &amp; khung câu đặc thù</h3><b>Overview frame:</b> <span class="eg">There was an increase in [nhóm cùng xu hướng] … while [nhóm ngược]. In addition, [đặc điểm nổi bật].</span><br><b>Khung câu body dự phòng khi bí:</b><ul class="tight"><li><i>The figure for N started at [x], before rising/falling to [y] in [năm], and ending the period at [z].</i></li><li><i>The figure for N was at [x], followed by a slow/significant increase to [y].</i></li><li><i>…, with a subsequent [trend], and a final [trend].</i></li></ul><b>"a trend" — nghĩa hẹp:</b> <i>a rising trend</i> chỉ so điểm cuối &gt; điểm đầu, KHÔNG có nghĩa tăng liên tục.</div><div class="dd"><div class="col do"><h4>✔ NÊN</h4><ul class=""><li>Dùng đủ kho xu hướng + Degree/Speed đúng biên độ</li><li>Nối cực trị bằng participle: <i>…, reaching a peak of…</i></li><li>So sánh giữa các đường (higher than / the gap narrowed)</li></ul></div><div class="col dont"><h4>✘ TRÁNH</h4><ul class=""><li>Kể máy móc từng mốc thời gian</li><li>Dùng soar/plummet cho thay đổi nhẹ</li><li>Bỏ quên đường không đổi (vẫn phải nêu "remained stable")</li></ul></div></div><div class="check"><b>✅ CHECKLIST 4 TIÊU CHÍ</b><table><tr><th></th><th>Tự kiểm tra trước khi nộp</th></tr><tr><td>TA</td><td>Overview nêu xu hướng chung + đường nổi bật, không số? Chọn điểm đắt?</td></tr><tr><td>CC</td><td>Chia đoạn theo nhóm xu hướng / nửa giai đoạn? Câu tín hiệu đầu Body?</td></tr><tr><td>LR</td><td>Đủ kho tăng/giảm, đúng biên độ? Đổi dạng từ (rose ↔ a rise)?</td></tr><tr><td>GRA</td><td>Thì khớp mốc? Participle clause? Giới từ to/by/at đúng?</td></tr></table></div></div></section>
+
+<nav class="nav"><div class="wrap row">
+  <a class="home" href="00-nen-chung.html">★ Nền chung</a>
+  <a class="cur" href="01-line-graph.html">1·Line</a>
+  <a href="02-bar-chart.html">2·Bar</a>
+  <a href="03-pie-chart.html">3·Pie</a>
+  <a href="04-table.html">4·Table</a>
+  <a href="05-mixed-charts.html">5·Mixed</a>
+  <a href="06-process.html">6·Process</a>
+  <a href="07-map.html">7·Map</a>
+</div></nav>
+
+<main class="wrap">
+
+<!-- ===== 1. NHẬN DIỆN ===== -->
+<section class="sec" id="s1">
+  <div class="sec-head"><span class="no">1</span><h2>Dạng này là gì / Nhận diện</h2></div>
+  <div class="sec-body">
+    <div class="def"><b>Line graph</b> — một hoặc nhiều đường biểu diễn số liệu <b>theo trục thời gian</b>. Đây LUÔN là dạng <b>động (dynamic)</b>: nhiệm vụ là mô tả cái gì <b>tăng / giảm / dao động / giữ nguyên</b> qua các mốc, và <b>so sánh</b> các đường với nhau.</div>
+    <div class="key"><b>🔑 Key point:</b> KHÔNG kể lể từng năm như đọc bảng. Band 8.0 = <b>chọn lọc điểm đắt</b> (điểm đầu · điểm cuối · đỉnh · đáy · giao nhau) và luôn đặt số liệu trong <b>so sánh + xu hướng</b>.</div>
+
+    <h3 class="blk"><span class="ic">🔎</span>Bước nhận diện (Noticing details)</h3>
+    <p class="vn">Trước khi viết, đọc đề &amp; biểu đồ để chốt 5 điều — đây là nền cho Introduction &amp; Overview:</p>
+    <table>
+      <tr><th>Cần xác định</th><th>Ví dụ</th></tr>
+      <tr><td class="lbl">Đối tượng (what)</td><td>the number of visitors / the amount of CO₂ emitted…</td></tr>
+      <tr><td class="lbl">Nơi chốn (where)</td><td>in the UK · in four European countries</td></tr>
+      <tr><td class="lbl">Thời gian (when)</td><td>1990–2010 (quá khứ) HOẶC 2020–2040 (tương lai/dự báo)</td></tr>
+      <tr><td class="lbl">Số đường &amp; cách phân loại</td><td>1 đường · 2 đường so sánh · 4 đường theo quốc gia</td></tr>
+      <tr><td class="lbl">Đơn vị đo</td><td>%, millions, £, thousand tonnes…</td></tr>
+    </table>
+    <div class="note"><b>Đặc thù line graph:</b> mốc thời gian có thể ở <b>tương lai</b> (đường nét đứt / chú thích "projected/estimated"). Nếu vậy phải chuyển sang thì tương lai — xem Mục 2.</div>
+  </div>
+</section>
+
+<!-- ===== 2. THÌ & NGUYÊN TẮC GỐC ===== -->
+<section class="sec" id="s2">
+  <div class="sec-head"><span class="no">2</span><h2>Chọn thì &amp; Nguyên tắc gốc</h2></div>
+  <div class="sec-body">
+    <h3 class="blk"><span class="ic">🕐</span>Chọn thì theo tín hiệu thời gian</h3>
+    <table>
+      <tr><th>Tín hiệu trong biểu đồ</th><th>Thì</th><th>Ví dụ</th></tr>
+      <tr><td class="lbl">Mốc quá khứ cụ thể (1990–2010)</td><td>Past simple</td><td><span class="eg">the figure rose from 3 to 4.4 million in 2010</span></td></tr>
+      <tr><td class="lbl">"By + năm" trong quá khứ</td><td>Past perfect</td><td><span class="eg">by 2007, the figure had more than doubled</span></td></tr>
+      <tr><td class="lbl">Thay đổi tới hiện tại, mốc không quan trọng</td><td>Present perfect</td><td><span class="eg">the price has fallen since July</span></td></tr>
+      <tr><td class="lbl">Có mốc tương lai / dự báo</td><td>will · is expected/projected to</td><td><span class="eg">the figure is projected to reach 5 million by 2040</span></td></tr>
+      <tr><td class="lbl">Hoàn tất trước mốc tương lai (by/in)</td><td>Future perfect</td><td><span class="eg">will have reached 300 by 2025</span></td></tr>
+    </table>
+    <div class="rule"><b>⚠️ Nguyên tắc gốc — nhất quán thì:</b> chọn 1 hệ thì theo khung thời gian của biểu đồ và giữ xuyên suốt. Sai/đổi thì lung tung là lỗi kép <b>GRA + TA</b> (báo cáo sai bản chất thời gian).</div>
+
+    <h3 class="blk"><span class="ic">⚖️</span>3 nguyên tắc gốc (bản chất Task 1)</h3>
+    <ul>
+      <li><b>Chỉ miêu tả — tóm tắt — so sánh.</b> Khách quan 100%: KHÔNG giải thích nguyên nhân, KHÔNG bình luận tốt/xấu, KHÔNG kết luận quan điểm.</li>
+      <li><b>"a trend" có nghĩa hẹp:</b> <i>a rising trend</i> chỉ nói điểm cuối cao hơn điểm đầu — KHÔNG có nghĩa tăng liên tục. Đừng gán "tăng đều" cho đường thực ra dao động.</li>
+      <li><b>Chọn từ khớp CHỦ ĐỀ:</b> <i>gains/losses</i> hợp dữ liệu tài chính, không hợp năng lượng; đọc chủ đề trước khi chọn lexis.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== 3. CẤU TRÚC 4 ĐOẠN ===== -->
+<section class="sec" id="s3">
+  <div class="sec-head"><span class="no">3</span><h2>Cấu trúc 4 đoạn (kèm câu dẫn · từ vựng · ngữ pháp)</h2></div>
+  <div class="sec-body">
+
+    <h3 class="blk"><span class="ic">🧭</span>Nguyên tắc chia đoạn của line graph</h3>
+    <p class="vn">Thân bài chia 2 đoạn theo MỘT trong hai cách — chọn cách làm nổi bật so sánh nhất:</p>
+    <ul class="tight">
+      <li><b>Chia theo nhóm xu hướng</b> (ưu tiên, band cao): Body 1 = các đường TĂNG · Body 2 = các đường GIẢM/không đổi. Mở đoạn tuyên bố lý do ghép: <span class="eg">…followed a similar upward trend.</span></li>
+      <li><b>Chia theo thời gian</b>: Body 1 = nửa đầu giai đoạn · Body 2 = nửa sau. Hợp khi có điểm gãy rõ giữa kỳ.</li>
+      <li>Một đường nổi bật áp đảo → tách riêng một đoạn, gom các đường còn lại vào đoạn kia.</li>
+    </ul>
+
+    <!-- INTRO -->
+    <div class="para">
+      <div class="ph"><b>Đoạn 1</b> INTRODUCTION — Paraphrase đề</div>
+      <p class="vn">Diễn đạt lại đề bằng từ của mình (chép nguyên = phạt LR). Ghép: <b>[determiner] + [loại biểu đồ] + [động từ] + [nội dung] + [thời gian/nơi chốn]</b>.</p>
+      <span class="frame">The line graph illustrates + [nội dung paraphrase] + [in nơi chốn] + [from X to Y / over a N-year period].</span>
+      <div class="mini-h">Câu dẫn học thuật</div>
+      <ul class="tight">
+        <li><span class="eg">The line graph illustrates the number of tourists who visited a Caribbean island between 2010 and 2017.</span></li>
+        <li><span class="eg">The provided graph compares the amount of CO₂ emitted per person in four European countries over a 40-year period.</span></li>
+      </ul>
+      <div class="mini-h">Từ đổi (Intro engine)</div>
+      <ul class="tight">
+        <li><b>the graph →</b> the line graph · the chart · the figure · the given/provided line graph</li>
+        <li><b>shows →</b> <span class="term">illustrates · depicts · compares · represents · gives information on</span></li>
+        <li><b>nội dung:</b> <i>the number of</i> → <span class="term">the figure for</span> · <i>the percentage of</i> → <span class="term">the proportion of</span> · <i>how many N + V</i></li>
+        <li><b>thời gian:</b> from…to ↔ <span class="term">between…and</span> · <span class="term">over a N-year period</span> (tính từ ghép, không "s")</li>
+      </ul>
+      <div class="led"><b>GRA focus:</b> mệnh đề quan hệ để nén danh từ — <span class="eg">the amount of money <u>which was spent</u>…</span> (giữ "which" khi làm chủ ngữ, bỏ được khi làm tân ngữ). Nhiều đường/nhiều biểu đồ → chủ ngữ số nhiều: <span class="eg">the line graphs compare…</span></div>
+    </div>
+
+    <!-- OVERVIEW -->
+    <div class="para">
+      <div class="ph"><b>Đoạn 2</b> OVERVIEW — 2 đặc điểm nổi bật · KHÔNG số</div>
+      <p class="vn">Band 8.0 TA: overview <b>rõ, đặt ngay đoạn 2</b>, nêu (1) <b>xu hướng chung</b> và (2) <b>đường nổi bật nhất</b> (cao nhất / đổi mạnh nhất). Tuyệt đối không số liệu chi tiết.</p>
+      <span class="frame">Overall, there was a [upward/downward] trend in [nhóm cùng xu hướng], while [nhóm ngược]. In addition, [đường nổi bật nhất] recorded the [highest/most dramatic] figures.</span>
+      <div class="mini-h">Câu dẫn học thuật (overview openers)</div>
+      <ul class="tight">
+        <li><span class="eg">Overall, it is clear that…</span> · <span class="eg">In general,…</span> · <span class="eg">As an overall trend,…</span></li>
+        <li><span class="eg">Overall, there was an increase in total visitors, and this trend was mirrored by both categories.</span></li>
+      </ul>
+      <div class="led"><b>CC focus — determiners khoanh phạm vi:</b> <span class="term">all of · both · neither · most · while</span> — chỉ rõ xu hướng thuộc về đường nào (<span class="eg">both figures rose, whereas the third remained stable</span>).</div>
+    </div>
+
+    <!-- BODY 1 -->
+    <div class="para">
+      <div class="ph"><b>Đoạn 3</b> BODY 1 — Nhóm/nửa thứ nhất</div>
+      <p class="vn">Nêu số đắt (đầu · cuối · đỉnh · đáy) đặt trong xu hướng &amp; so sánh. Mở đoạn bằng câu phát tín hiệu.</p>
+      <div class="mini-h">Câu dẫn (signalling) đầu Body</div>
+      <ul class="tight">
+        <li><span class="eg">Looking at the figures for [nhóm A] in more detail,…</span></li>
+        <li><span class="eg">Regarding the first three years of the period,…</span></li>
+        <li><span class="eg">Turning to the categories that rose,…</span></li>
+      </ul>
+      <div class="mini-h">Khung câu số liệu (khi bí)</div>
+      <span class="frame">The figure for N started at [x], before rising steadily to [y] in [năm], and ending the period at [z].
+The figure for N was at [x], followed by a [adj] increase to [y].
+…, with a subsequent [trend], and a final [trend].</span>
+    </div>
+
+    <!-- BODY 2 -->
+    <div class="para">
+      <div class="ph"><b>Đoạn 4</b> BODY 2 — Nhóm/nửa còn lại</div>
+      <p class="vn">Xử lý nhóm ngược lại / nửa sau; luôn đối chiếu với Body 1 để giữ mạch so sánh.</p>
+      <div class="mini-h">Câu dẫn tương phản</div>
+      <ul class="tight">
+        <li><span class="eg">By contrast, the remaining categories showed a downward trend.</span></li>
+        <li><span class="eg">Meanwhile, the figure for [B] moved in the opposite direction.</span></li>
+      </ul>
+    </div>
+
+    <!-- VOCAB & COLLOCATION -->
+    <h3 class="blk"><span class="ic">🔤</span>Từ vựng &amp; Collocation theo dạng (LR Band 8)</h3>
+    <table>
+      <tr><th>Chuyển động</th><th>VERBS</th><th>NOUNS (There was a…)</th></tr>
+      <tr><td class="lbl">Tăng vừa</td><td>rise · increase · grow · climb · go up</td><td>an increase · a rise · an upward trend</td></tr>
+      <tr><td class="lbl">Tăng mạnh</td><td>soar · rocket · surge · shoot up · leap</td><td>a surge · a jump · a leap</td></tr>
+      <tr><td class="lbl">Giảm vừa</td><td>fall · drop · decline · decrease · slip</td><td>a fall · a decline · a downward trend</td></tr>
+      <tr><td class="lbl">Giảm mạnh</td><td>plummet · plunge · crash · sink · tumble</td><td>a plunge · a slump · a crash</td></tr>
+      <tr><td class="lbl">Đỉnh / đáy</td><td>peak · reach a peak · bottom out</td><td>a peak · a trough · a low point</td></tr>
+      <tr><td class="lbl">Không đổi</td><td>remain stable · level off · plateau · <span class="warn">stabilize</span> (tốt) · <span class="warn">stagnate</span> (xấu)</td><td>—</td></tr>
+      <tr><td class="lbl">Dao động</td><td>fluctuate · experience fluctuations</td><td>a fluctuation</td></tr>
+      <tr><td class="lbl">So sánh 2 đường</td><td>the gap narrowed / widened · A converged with B · A overtook B</td><td>the gap between A and B</td></tr>
+    </table>
+    <div class="key">⭐ <b>Degree (mức độ – trục Y) ≠ Speed (tốc độ – trục X):</b>
+      <br>• DEGREE (bao nhiêu): <span class="term">dramatic · sharp · considerable · significant · slight</span>
+      <br>• SPEED (nhanh chậm): <span class="term">rapid · sudden · abrupt · steady · gradual</span>
+      <br>Ghép được cả hai: <span class="eg">a dramatic, rapid rise</span>. Nhưng <span class="warn">KHÔNG</span> viết <span class="warn">"a rapid amount"</span> / <span class="warn">"a dramatic speed"</span>.</div>
+
+    <!-- USEFUL PHRASES -->
+    <h3 class="blk"><span class="ic">💬</span>Cụm câu mẫu (Useful phrases)</h3>
+    <ul class="tight">
+      <li><span class="eg">There was a gradual rise in the number of…</span></li>
+      <li><span class="eg">The figure climbed steadily, reaching a peak of 80% in 2015.</span></li>
+      <li><span class="eg">After hitting a trough of just under 5% in 1945, the figure recovered to…</span></li>
+      <li><span class="eg">The number of X remained relatively stable at around [số] throughout the period.</span></li>
+      <li><span class="eg">The figure for X fluctuated between [a] and [b] before levelling off.</span></li>
+      <li><span class="eg">In [năm], X overtook Y for the first time, and the gap widened thereafter.</span></li>
+    </ul>
+
+    <!-- GRAMMAR FOCUS -->
+    <h3 class="blk"><span class="ic">📐</span>Grammar focus cho line graph (GRA Band 8)</h3>
+    <h4 class="sub">① Xoay 2 khuôn để có "flexibility"</h4>
+    <ul class="tight">
+      <li>Verb + Adverb: <span class="eg">The price rose gradually.</span></li>
+      <li>Adj + Noun (danh từ hóa): <span class="eg">There was a gradual rise in the price.</span></li>
+      <li class="vn">→ Nói cùng một ý; luân phiên chính là bằng chứng linh hoạt của GRA + LR.</li>
+    </ul>
+    <h4 class="sub">② Participle clause — nối cực trị mà không tách câu</h4>
+    <span class="frame">…rose sharply, reaching a peak of 80% in 2015.
+…fell steadily, hitting a low of 2% by 2000.</span>
+    <h4 class="sub">③ Giới từ số liệu (lỗi kép GRA + TA)</h4>
+    <table>
+      <tr><th>Giới từ</th><th>Nghĩa</th><th>Ví dụ</th></tr>
+      <tr><td class="lbl">from … to …</td><td>điểm đầu → điểm cuối</td><td>fell from $150 to $50</td></tr>
+      <tr><td class="lbl">by</td><td>độ thay đổi (thêm/bớt)</td><td>increased by 100%</td></tr>
+      <tr><td class="lbl">of</td><td>biên độ (đi với danh từ)</td><td>an increase of 50%</td></tr>
+      <tr><td class="lbl">to</td><td>mức đích (chạm mức)</td><td>rose to $60</td></tr>
+      <tr><td class="lbl">at</td><td>mức tĩnh (đứng ở)</td><td>stood at 90 · peaked at $130</td></tr>
+    </table>
+    <div class="note"><b>Bẫy vàng:</b> <i>rose <b>by</b> 50%</i> (10→60) ≠ <i>rose <b>to</b> 50%</i> (10→50). Nhầm = báo cáo sai biểu đồ. Không viết <span class="warn">"rise up" / "fall down"</span> (thừa từ).</div>
+    <h4 class="sub">④ Bội số &amp; so sánh</h4>
+    <ul class="tight">
+      <li>Bội số: <span class="eg">doubled · tripled · more than doubled · halved</span> — thay cho lặp "increase".</li>
+      <li>So sánh (bắt buộc có): <span class="eg">a higher figure than… · X was far more popular than Y · the highest of all</span>.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== 4. LUẬT CỨNG ===== -->
+<section class="sec" id="s4">
+  <div class="sec-head"><span class="no">4</span><h2>LUẬT CỨNG — Do's &amp; Don'ts</h2></div>
+  <div class="sec-body">
+    <div class="dd">
+      <div class="col do"><h4>✔ NÊN</h4><ul>
+        <li>Chọn <b>5–7 số đắt</b> (đầu · cuối · đỉnh · đáy · giao nhau), luôn đặt trong so sánh.</li>
+        <li>Dùng đúng <b>biên độ</b> — soar/plummet cho thay đổi lớn, edge up/slip cho thay đổi nhỏ.</li>
+        <li>Phân biệt <b>Degree vs Speed</b> khi ghép tính từ.</li>
+        <li>Nối cực trị bằng <b>participle clause</b> (…, reaching a peak of…).</li>
+        <li>Nêu cả đường <b>không đổi</b> (remained stable) — đừng bỏ sót.</li>
+      </ul></div>
+      <div class="col dont"><h4>✘ TRÁNH</h4><ul>
+        <li><b>Kể máy móc</b> "năm 2000 là X, năm 2005 là Y…" → khóa TA ở 5.0.</li>
+        <li>Dùng <span class="warn">soar/plummet</span> cho thay đổi nhẹ → lỗi word choice nặng.</li>
+        <li>Thêm <b>nguyên nhân / ý kiến</b> (<i>surprisingly, this is good…</i>) → TA trần 6.0.</li>
+        <li>Đưa <b>số liệu vào Overview</b>.</li>
+        <li>Nhầm <b>to ↔ by</b>; viết "rise up / fall down".</li>
+      </ul></div>
+    </div>
+    <div class="rule"><b>⚠️ LUẬT CỨNG số 1 của line graph:</b> luôn có <b>Overview không số</b> + luôn <b>so sánh</b> (không tả từng đường tách rời). Đây là hai hành vi phân biệt Band 8 với Band 5–6.</div>
+  </div>
+</section>
+
+<!-- ===== 5. CHECKLIST ===== -->
+<section class="sec" id="s5">
+  <div class="sec-head"><span class="no">5</span><h2>Checklist 4 tiêu chí (Band 8.0)</h2></div>
+  <div class="sec-body">
+    <div class="check"><table>
+      <tr><th>Tiêu chí</th><th>Hành vi Band 8.0 cần đạt</th></tr>
+      <tr><td class="crit">TA</td><td>Overview rõ ở đoạn 2 (xu hướng chung + đường nổi bật, KHÔNG số) <span class="band-tag">B8</span> · chọn 5–7 số đắt đặt trong so sánh · khách quan 100%.</td></tr>
+      <tr><td class="crit">CC</td><td>Chia đoạn theo nhóm xu hướng / nửa giai đoạn · câu phát tín hiệu đầu mỗi Body (Looking at… / Turning to…) · referencing rõ (this figure / the former) <span class="band-tag">B8</span>.</td></tr>
+      <tr><td class="crit">LR</td><td>Kho tăng/giảm đúng biên độ · Degree≠Speed · đổi dạng từ (rose ↔ a rise) · collocation (reach a peak of / the gap narrowed) <span class="band-tag">B8</span> · không chép đề, không từ cảm xúc.</td></tr>
+      <tr><td class="crit">GRA</td><td>Thì khớp mốc &amp; nhất quán · participle clause · past perfect với "By + năm" · giới từ số liệu to/by/at/of chuẩn <span class="band-tag">B8</span> · phần lớn câu error-free.</td></tr>
+    </table></div>
+    <div class="key">🎯 <b>Tự soát nhanh:</b> Overview có số không? (phải KHÔNG) · Có ít nhất 2 câu so sánh không? · Mỗi tính từ Degree/Speed đã đúng trục chưa? · Giới từ số liệu đã đúng to/by chưa?</div>
+  </div>
+</section>
+
 </main>
-</body>
-</html>
+</body></html>
