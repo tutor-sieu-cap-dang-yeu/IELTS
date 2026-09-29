@@ -1,0 +1,105 @@
+<!DOCTYPE html><html lang="vi"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nền chung — Task 1 — IELTS Writing Task 1</title>
+<style>
+:root{
+  --paper:#FDFDFB; --paper-line:#EEF1F5; --ink:#252830; --ink-soft:#666C78;
+  --pink:#C93A97; --pink-bg:#FBE0F1; --pink-soft:#FDEFF5;
+  --blue:#2456A6; --blue-bg:#E3ECFA;
+  --green:#2E8B57; --green-bg:#E4F4EA;
+  --orange:#C9700F; --orange-bg:#FBEBD6;
+  --red:#C0362C; --red-bg:#FBE3E1;
+  --purple:#6D4AA6; --purple-bg:#EEE7F8;
+  --radius:12px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Roboto','Segoe UI',system-ui,sans-serif;color:var(--ink);font-size:16px;line-height:1.7;background:var(--paper);padding-bottom:80px}
+.wrap{max-width:920px;margin:0 auto;padding:0 18px}
+.hero{text-align:center;padding:34px 0 8px}
+.hero .kicker{letter-spacing:3px;font-size:13px;font-weight:700;color:var(--purple)}
+.hero h1{font-size:38px;color:var(--ink);font-weight:800;line-height:1.1;margin-top:4px}
+.hero .sub{font-size:15px;color:var(--ink-soft);margin-top:10px;max-width:640px;margin-left:auto;margin-right:auto}
+.hero .meta{margin-top:10px;font-size:12.5px;color:var(--ink-soft)}
+
+.nav{position:sticky;top:0;z-index:30;background:rgba(253,253,251,.97);backdrop-filter:blur(5px);padding:10px 0;border-bottom:2px solid var(--pink-bg);margin-bottom:8px}
+.nav .row{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
+.nav a{text-decoration:none;background:#fff;border:1.5px solid #E4C8DA;border-radius:999px;padding:5px 13px;font-size:12.5px;font-weight:700;color:var(--pink)}
+.nav a:hover{background:var(--pink-soft)}
+.nav a.home{border-color:var(--purple);color:var(--purple)}
+
+/* dạng section */
+.type{scroll-margin-top:64px;margin:40px 0 0}
+.type-head{display:flex;align-items:center;gap:14px;background:var(--purple);color:#fff;border-radius:var(--radius) var(--radius) 0 0;padding:16px 22px}
+.type-head .no{background:#fff;color:var(--purple);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:19px;flex:0 0 auto}
+.type-head h2{font-size:24px;font-weight:800;line-height:1.15}
+.type-head .en{font-size:13px;font-weight:600;opacity:.85;margin-top:2px}
+.type-body{border:2px solid var(--purple-bg);border-top:none;border-radius:0 0 var(--radius) var(--radius);padding:6px 22px 22px;background:#fff}
+
+/* block trong mỗi dạng */
+.blk{margin:20px 0 0}
+.blk h3{font-size:16.5px;font-weight:800;color:var(--ink);display:flex;align-items:center;gap:9px;padding-bottom:6px;border-bottom:2px solid #EFEFEF;margin-bottom:10px}
+.blk h3 .ic{width:24px;height:24px;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;flex:0 0 auto}
+.ic.b1{background:var(--blue-bg)} .ic.b2{background:var(--green-bg)} .ic.b3{background:var(--purple-bg)}
+.ic.b4{background:var(--orange-bg)} .ic.b5{background:var(--pink-bg)} .ic.b6{background:var(--red-bg)}
+
+.def{background:var(--pink-soft);border-left:4px solid var(--pink);border-radius:6px;padding:12px 16px;font-size:15px}
+.key{background:#FFF8E6;border:1px solid #F0DFA6;border-radius:8px;padding:11px 15px;font-size:14px;margin-top:10px}
+.key b{color:var(--orange)}
+
+ul{padding-left:20px;margin:4px 0}
+li{margin:5px 0}
+.tight li{margin:3px 0}
+.eg{color:var(--green);font-style:italic}
+.term{color:var(--blue);font-weight:600}
+.warn{color:var(--red);font-weight:700}
+
+/* structure 4 đoạn */
+.steps{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:8px}
+.step{border:1.5px solid #E8E8E8;border-radius:10px;padding:13px 16px;font-size:14px}
+.step .sh{font-size:13px;font-weight:800;letter-spacing:.4px;color:var(--purple);margin-bottom:5px}
+.step .sh b{background:var(--purple);color:#fff;border-radius:5px;padding:1px 7px;margin-right:6px;font-size:12px}
+.step .frame{display:block;background:#F6F4FB;border:1px dashed #C9BEE6;border-radius:6px;padding:6px 10px;margin-top:6px;font-family:'Consolas',monospace;font-size:12.5px;color:#4a3a7a}
+
+/* table */
+table{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0}
+th,td{border:1px solid #E7E7E7;padding:7px 11px;text-align:left;vertical-align:top}
+th{background:var(--pink-soft);font-size:12.5px;letter-spacing:.3px}
+td:first-child{font-weight:600;color:var(--ink-soft);white-space:nowrap}
+
+/* do/don't */
+.dd{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:6px}
+.dd .col{border-radius:10px;padding:12px 16px;font-size:14px}
+.dd .do{background:var(--green-bg);border:1.5px solid var(--green)}
+.dd .dont{background:var(--red-bg);border:1.5px solid var(--red)}
+.dd h4{font-size:14px;margin-bottom:6px}
+.dd .do h4{color:var(--green)} .dd .dont h4{color:var(--red)}
+.dd ul{padding-left:18px}
+
+.rule{background:var(--red-bg);border:1.5px solid var(--red);border-radius:8px;padding:11px 15px;font-size:14px;margin-top:10px}
+.rule b{color:var(--red)}
+.check{background:var(--green-bg);border:1.5px solid var(--green);border-radius:8px;padding:11px 15px;font-size:14px;margin-top:10px}
+.check b{color:var(--green)}
+.check table td:first-child{color:var(--green);font-weight:800;width:44px}
+
+@media(max-width:640px){
+  .hero h1{font-size:28px}
+  .steps,.dd{grid-template-columns:1fr}
+  table{display:block;overflow-x:auto}
+}
+
+.nav a.cur{background:var(--purple);color:#fff;border-color:var(--purple)}
+.filehero{text-align:center;padding:26px 0 4px}
+.filehero .kicker{letter-spacing:3px;font-size:12px;font-weight:700;color:var(--purple)}
+.filehero h1{font-size:30px;color:var(--ink);font-weight:800;line-height:1.15;margin-top:4px}
+.filehero .sub{font-size:14px;color:var(--ink-soft);margin-top:6px}
+</style></head><body>
+<header class="filehero wrap">
+  <div class="kicker">IELTS WRITING TASK 1 · CẨM NANG THEO DẠNG</div>
+  <h1>Nền chung — Task 1</h1>
+  <div class="sub">Đọc trước · quy tắc chung cho mọi dạng</div>
+</header>
+<nav class="nav"><div class="wrap row"><a class="home cur" href="00-nen-chung.html">★ Nền chung</a><a class="" href="01-line-graph.html">1·Line</a><a class="" href="02-bar-chart.html">2·Bar</a><a class="" href="03-pie-chart.html">3·Pie</a><a class="" href="04-table.html">4·Table</a><a class="" href="05-mixed-charts.html">5·Mixed</a><a class="" href="06-process.html">6·Process</a><a class="" href="07-map.html">7·Map</a></div></nav>
+<main class="wrap" style="padding-top:6px">
+<section class="type" style="margin-top:12px" id="core"><div class="type-head"><span class="no">★</span><div><h2>NỀN CHUNG — áp dụng mọi dạng</h2><div class="en">Read this first · core rules for all chart types</div></div></div><div class="type-body"><div class="def">Task 1 = <b>miêu tả + tóm tắt + so sánh</b> thông tin cho sẵn. Báo cáo <b>khách quan 100%</b>: không giải thích nguyên nhân, không bình luận tốt/xấu, không nêu quan điểm. 20 phút · tối thiểu 150 từ · chiếm ⅓ điểm Writing.</div><div class="blk"><h3><span class="ic b1">🧭</span>Quy trình 3 bước trước khi viết (mọi dạng)</h3><ul class=""><li><b>Noticing details</b> — đọc đề &amp; biểu đồ, xác định: chủ đề · nơi chốn · thời gian · số đối tượng · cách phân loại · đơn vị đo. (Map thêm: Key, Scale, Compass. Process thêm: số bước, hướng mũi tên, thời lượng.)</li><li><b>Identifying key features</b> — tìm: thay đổi lớn · điểm cao/thấp nhất · điểm tương đồng · thứ không đổi. Nháp bằng ký hiệu <span class="term">↑ ↑↑ ↓ ↓↓ →</span>, xếp hạng 1/2/3.</li><li><b>Organizing information</b> — KHÔNG có cách chia sai, miễn rõ ràng và <b>tạo điều kiện so sánh</b>. Nhóm các đối tượng cùng đặc điểm vào một đoạn.</li></ul></div><div class="blk"><h3><span class="ic b3">🏗️</span>Cấu trúc 4 đoạn — khung chung cho MỌI dạng</h3><div class="steps"><div class="step"><div class="sh"><b>1</b>INTRODUCTION</div>Paraphrase đề bằng từ của mình (KHÔNG chép nguyên văn).<span class="frame">[determiner] + [loại biểu đồ] + [động từ] + [nội dung] + [thời gian/nơi chốn]</span></div><div class="step"><div class="sh"><b>2</b>OVERVIEW</div>Nêu 2 đặc điểm nổi bật nhất. <b>KHÔNG có số liệu chi tiết.</b><span class="frame">Overall, / It is clear that … + [đặc điểm 1] … while [đặc điểm 2].</span></div><div class="step"><div class="sh"><b>3</b>BODY 1</div>Nhóm số liệu 1 — nêu số đắt + so sánh.</div><div class="step"><div class="sh"><b>4</b>BODY 2</div>Nhóm số liệu 2 — nêu số đắt + so sánh.</div></div></div><div class="blk"><h3><span class="ic b2">✍️</span>Câu mở bài — bộ máy paraphrase (Intro engine)</h3><b>Đổi loại biểu đồ &amp; determiner:</b> The <span class="term">given / supplied / presented / shown / provided</span> + line graph / bar chart / pie chart / table / diagram / map.<br><b>Đổi động từ "show":</b> illustrate · depict · compare · represent · present · give/provide information on · indicate.<br><b>Đổi nội dung (2 công thức xoay):</b><ul class="tight"><li><span class="term">how many/much</span> + N + V → <i>shows how many tourists visited…</i></li><li><span class="term">the number/amount of</span> + N + mệnh đề quan hệ → <i>the amount of money (which was) spent…</i></li><li>Đơn vị % → <span class="term">the proportion / percentage / share of</span></li></ul><b>Đổi thời gian/nơi chốn:</b> from…to ↔ between…and · over a <span class="term">N-year period</span> (tính từ ghép, không "s") · "five countries in Europe" → "five European countries" · danh sách dài → umbrella term + <span class="term">, namely …</span></div><div class="blk"><h3><span class="ic b4">🔤</span>Kho ngôn ngữ xu hướng (dùng cho dạng CÓ thời gian)</h3><table><tr><th>Chuyển động</th><th>VERBS</th><th>NOUNS (There was a…)</th></tr><tr><td>Tăng vừa</td><td>rise · increase · grow · climb · go up</td><td>an increase · a rise · an upward trend</td></tr><tr><td>Tăng mạnh</td><td>soar · rocket · surge · jump · leap</td><td>a surge · a jump · a leap</td></tr><tr><td>Giảm vừa</td><td>fall · drop · decline · decrease · slip</td><td>a fall · a decline · a downward trend</td></tr><tr><td>Giảm mạnh</td><td>plummet · plunge · crash · sink</td><td>a plunge · a slump · a crash</td></tr><tr><td>Đỉnh / đáy</td><td>peak · reach a peak · bottom out</td><td>a peak · a trough · a low point</td></tr><tr><td>Không đổi</td><td>remain stable · level off · stabilize (tốt) · stagnate (xấu)</td><td>—</td></tr><tr><td>Dao động</td><td>fluctuate</td><td>a fluctuation</td></tr></table><div class="key">⭐ <b>Degree (mức độ, trục Y) ≠ Speed (tốc độ, trục X)</b>. DEGREE: <span class="term">dramatic · sharp · significant · slight</span>. SPEED: <span class="term">rapid · sudden · steady · gradual</span>. Có thể ghép cả hai (<i>a dramatic, rapid rise</i>) nhưng KHÔNG viết <span class="warn">"a rapid amount"</span> hay <span class="warn">"a dramatic speed"</span>.</div><div class="rule"><b>⚠️ Giới từ số liệu (lỗi kép GRA+TA):</b> from X <b>to</b> Y (đầu→cuối) · <b>by</b> + lượng thay đổi · <b>of</b> + lượng (đi với danh từ) · <b>to</b> + mức đích · <b>at</b> + mức tĩnh. Nhầm <i>rose <b>to</b> 50%</i> (10→50) với <i>rose <b>by</b> 50%</i> (10→60) = báo cáo sai biểu đồ. Không viết "rise up" / "fall down".</div></div><div class="blk"><h3><span class="ic b5">📐</span>Grammar &amp; chọn thì (mọi dạng)</h3><b>Xoay 2 khuôn để có flexibility:</b> <i>The price rose gradually</i> (V+Adv) ↔ <i>There was a gradual rise in the price</i> (Adj+N).<br><b>3 cấu trúc ăn điểm Range:</b> participle clause (<i>…rose sharply, reaching a peak of 80%</i>) · contrast clause (<i>while / whereas / although</i>) · past perfect với "By" (<i>By 2007, X had doubled</i>).<br><b>So sánh (bắt buộc có ở Task 1):</b> more/fewer … than · [adj-er] than · the most/least · the highest.<table><tr><th>Tín hiệu trong biểu đồ</th><th>Thì</th></tr><tr><td>Mốc quá khứ cụ thể</td><td>Past simple</td></tr><tr><td>"By + năm" trong quá khứ</td><td>Past perfect (had risen)</td></tr><tr><td>Có mốc tương lai</td><td>will / is expected / is projected to</td></tr><tr><td>Process / Map hiện trạng</td><td>Present simple (+ passive)</td></tr></table></div><div class="rule"><b>🚫 3 bẫy khóa band chung mọi dạng:</b> (1) Liệt kê máy móc "năm A là X, năm B là Y…" → không phân tích. (2) Thêm nguyên nhân / ý kiến cá nhân (<i>surprisingly, this is good…</i>) → TA trần 6.0. (3) Viết "Conclusion" nêu quan điểm kiểu Task 2.</div></div></section>
+</main>
+</body></html>
