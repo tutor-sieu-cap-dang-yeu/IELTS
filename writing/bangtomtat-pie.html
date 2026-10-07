@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="vi"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pie Chart — Biểu đồ tròn — IELTS Writing Task 1</title>
+<title>Pie Chart — Biểu đồ tròn — IELTS Writing Task 1 (Band 8.0)</title>
 <style>
 :root{
   --paper:#FDFDFB; --paper-line:#EEF1F5; --ink:#252830; --ink-soft:#666C78;
@@ -14,93 +14,88 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Roboto','Segoe UI',system-ui,sans-serif;color:var(--ink);font-size:16px;line-height:1.7;background:var(--paper);padding-bottom:80px}
-.wrap{max-width:920px;margin:0 auto;padding:0 18px}
-.hero{text-align:center;padding:34px 0 8px}
-.hero .kicker{letter-spacing:3px;font-size:13px;font-weight:700;color:var(--purple)}
-.hero h1{font-size:38px;color:var(--ink);font-weight:800;line-height:1.1;margin-top:4px}
-.hero .sub{font-size:15px;color:var(--ink-soft);margin-top:10px;max-width:640px;margin-left:auto;margin-right:auto}
-.hero .meta{margin-top:10px;font-size:12.5px;color:var(--ink-soft)}
+.wrap{max-width:940px;margin:0 auto;padding:0 18px}
+.filehero{text-align:center;padding:30px 0 6px}
+.filehero .kicker{letter-spacing:3px;font-size:12px;font-weight:700;color:var(--purple)}
+.filehero h1{font-size:34px;color:var(--ink);font-weight:800;line-height:1.12;margin-top:5px}
+.filehero .sub{font-size:14.5px;color:var(--ink-soft);margin-top:8px;max-width:660px;margin-left:auto;margin-right:auto}
+.filehero .band{display:inline-block;margin-top:10px;background:var(--purple-bg);color:var(--purple);font-weight:700;font-size:13px;border-radius:999px;padding:4px 16px}
 
-.nav{position:sticky;top:0;z-index:30;background:rgba(253,253,251,.97);backdrop-filter:blur(5px);padding:10px 0;border-bottom:2px solid var(--pink-bg);margin-bottom:8px}
+.nav{position:sticky;top:0;z-index:30;background:rgba(253,253,251,.97);backdrop-filter:blur(5px);padding:9px 0;border-bottom:2px solid var(--pink-bg);margin-bottom:10px}
 .nav .row{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
-.nav a{text-decoration:none;background:#fff;border:1.5px solid #E4C8DA;border-radius:999px;padding:5px 13px;font-size:12.5px;font-weight:700;color:var(--pink)}
+.nav a{text-decoration:none;background:#fff;border:1.5px solid #E4C8DA;border-radius:999px;padding:5px 12px;font-size:12px;font-weight:700;color:var(--pink)}
 .nav a:hover{background:var(--pink-soft)}
 .nav a.home{border-color:var(--purple);color:var(--purple)}
+.nav a.cur{background:var(--purple);color:#fff;border-color:var(--purple)}
 
-/* dạng section */
-.type{scroll-margin-top:64px;margin:40px 0 0}
-.type-head{display:flex;align-items:center;gap:14px;background:var(--purple);color:#fff;border-radius:var(--radius) var(--radius) 0 0;padding:16px 22px}
-.type-head .no{background:#fff;color:var(--purple);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:19px;flex:0 0 auto}
-.type-head h2{font-size:24px;font-weight:800;line-height:1.15}
-.type-head .en{font-size:13px;font-weight:600;opacity:.85;margin-top:2px}
-.type-body{border:2px solid var(--purple-bg);border-top:none;border-radius:0 0 var(--radius) var(--radius);padding:6px 22px 22px;background:#fff}
+/* section (mục 1..5) */
+.sec{scroll-margin-top:60px;margin:26px 0 0;border:2px solid var(--purple-bg);border-radius:var(--radius);overflow:hidden}
+.sec-head{display:flex;align-items:center;gap:13px;background:var(--purple);color:#fff;padding:14px 20px}
+.sec-head .no{background:#fff;color:var(--purple);width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:17px;flex:0 0 auto}
+.sec-head h2{font-size:20px;font-weight:800;line-height:1.15}
+.sec-body{background:#fff;padding:8px 20px 20px}
 
-/* block trong mỗi dạng */
-.blk{margin:20px 0 0}
-.blk h3{font-size:16.5px;font-weight:800;color:var(--ink);display:flex;align-items:center;gap:9px;padding-bottom:6px;border-bottom:2px solid #EFEFEF;margin-bottom:10px}
-.blk h3 .ic{width:24px;height:24px;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;flex:0 0 auto}
-.ic.b1{background:var(--blue-bg)} .ic.b2{background:var(--green-bg)} .ic.b3{background:var(--purple-bg)}
-.ic.b4{background:var(--orange-bg)} .ic.b5{background:var(--pink-bg)} .ic.b6{background:var(--red-bg)}
-
-.def{background:var(--pink-soft);border-left:4px solid var(--pink);border-radius:6px;padding:12px 16px;font-size:15px}
-.key{background:#FFF8E6;border:1px solid #F0DFA6;border-radius:8px;padding:11px 15px;font-size:14px;margin-top:10px}
+.def{background:var(--pink-soft);border-left:4px solid var(--pink);border-radius:6px;padding:12px 16px;font-size:15px;margin-top:14px}
+.key{background:#FFF8E6;border:1px solid #F0DFA6;border-radius:8px;padding:11px 15px;font-size:14px;margin-top:12px}
 .key b{color:var(--orange)}
+.note{background:var(--blue-bg);border:1px solid #BFD3EE;border-radius:8px;padding:11px 15px;font-size:14px;margin-top:12px}
+.note b{color:var(--blue)}
 
-ul{padding-left:20px;margin:4px 0}
-li{margin:5px 0}
+h3.blk{font-size:16px;font-weight:800;color:var(--ink);display:flex;align-items:center;gap:9px;padding-bottom:6px;border-bottom:2px solid #EFEFEF;margin:18px 0 10px}
+h3.blk .ic{width:24px;height:24px;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;flex:0 0 auto;background:var(--blue-bg)}
+h4.sub{font-size:14px;font-weight:800;color:var(--purple);margin:14px 0 4px;letter-spacing:.2px}
+
+ul{padding-left:20px;margin:4px 0}li{margin:5px 0}
 .tight li{margin:3px 0}
 .eg{color:var(--green);font-style:italic}
 .term{color:var(--blue);font-weight:600}
 .warn{color:var(--red);font-weight:700}
+.vn{color:var(--ink-soft);font-size:13px}
 
-/* structure 4 đoạn */
-.steps{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:8px}
-.step{border:1.5px solid #E8E8E8;border-radius:10px;padding:13px 16px;font-size:14px}
-.step .sh{font-size:13px;font-weight:800;letter-spacing:.4px;color:var(--purple);margin-bottom:5px}
-.step .sh b{background:var(--purple);color:#fff;border-radius:5px;padding:1px 7px;margin-right:6px;font-size:12px}
-.step .frame{display:block;background:#F6F4FB;border:1px dashed #C9BEE6;border-radius:6px;padding:6px 10px;margin-top:6px;font-family:'Consolas',monospace;font-size:12.5px;color:#4a3a7a}
+table{width:100%;border-collapse:collapse;font-size:13.5px;margin:8px 0}
+th,td{border:1px solid #E7E7E7;padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--pink-soft);font-size:12px;letter-spacing:.3px}
+td.lbl{font-weight:700;color:var(--ink-soft);white-space:nowrap;width:1%}
 
-/* table */
-table{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0}
-th,td{border:1px solid #E7E7E7;padding:7px 11px;text-align:left;vertical-align:top}
-th{background:var(--pink-soft);font-size:12.5px;letter-spacing:.3px}
-td:first-child{font-weight:600;color:var(--ink-soft);white-space:nowrap}
+/* 4-para */
+.para{border:1.5px solid #E8E8E8;border-radius:10px;padding:14px 16px;margin:12px 0;background:#FCFCFE}
+.para .ph{font-size:13.5px;font-weight:800;letter-spacing:.3px;color:var(--purple);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.para .ph b{background:var(--purple);color:#fff;border-radius:6px;padding:2px 9px;font-size:12px}
+.frame{display:block;background:#F6F4FB;border:1px dashed #C9BEE6;border-radius:6px;padding:8px 12px;margin:8px 0;font-family:'Consolas',monospace;font-size:12.5px;color:#4a3a7a;line-height:1.6}
+.led{margin:8px 0 4px;font-size:13.5px}
+.led b{color:var(--green)}
+.mini-h{font-size:12.5px;font-weight:800;color:var(--ink-soft);letter-spacing:.4px;margin:10px 0 3px;text-transform:uppercase}
 
-/* do/don't */
 .dd{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:6px}
 .dd .col{border-radius:10px;padding:12px 16px;font-size:14px}
 .dd .do{background:var(--green-bg);border:1.5px solid var(--green)}
 .dd .dont{background:var(--red-bg);border:1.5px solid var(--red)}
 .dd h4{font-size:14px;margin-bottom:6px}
-.dd .do h4{color:var(--green)} .dd .dont h4{color:var(--red)}
+.dd .do h4{color:var(--green)}.dd .dont h4{color:var(--red)}
 .dd ul{padding-left:18px}
-
-.rule{background:var(--red-bg);border:1.5px solid var(--red);border-radius:8px;padding:11px 15px;font-size:14px;margin-top:10px}
+.rule{background:var(--red-bg);border:1.5px solid var(--red);border-radius:8px;padding:11px 15px;font-size:14px;margin-top:12px}
 .rule b{color:var(--red)}
-.check{background:var(--green-bg);border:1.5px solid var(--green);border-radius:8px;padding:11px 15px;font-size:14px;margin-top:10px}
-.check b{color:var(--green)}
-.check table td:first-child{color:var(--green);font-weight:800;width:44px}
+
+.check{margin-top:6px}
+.check table td.crit{color:var(--green);font-weight:800;width:52px;background:var(--green-bg)}
+.band-tag{font-size:11px;font-weight:700;color:var(--purple);background:var(--purple-bg);border-radius:5px;padding:1px 7px;margin-left:4px}
 
 @media(max-width:640px){
-  .hero h1{font-size:28px}
-  .steps,.dd{grid-template-columns:1fr}
+  .filehero h1{font-size:26px}
+  .dd{grid-template-columns:1fr}
   table{display:block;overflow-x:auto}
 }
-
-.nav a.cur{background:var(--purple);color:#fff;border-color:var(--purple)}
-.filehero{text-align:center;padding:26px 0 4px}
-.filehero .kicker{letter-spacing:3px;font-size:12px;font-weight:700;color:var(--purple)}
-.filehero h1{font-size:30px;color:var(--ink);font-weight:800;line-height:1.15;margin-top:4px}
-.filehero .sub{font-size:14px;color:var(--ink-soft);margin-top:6px}
 </style></head><body>
 <header class="filehero wrap">
   <div class="kicker">IELTS WRITING TASK 1 · CẨM NANG THEO DẠNG</div>
   <h1>Pie Chart — Biểu đồ tròn</h1>
-  <div class="sub">Phần của một tổng thể · luôn %</div>
+  <div class="sub">Phần của một tổng thể · luôn %. Kiến thức neo <b>Band 8.0</b> cho cả 4 tiêu chí (TA · CC · LR · GRA), rút từ skill <b>ielts-writing-task1-sample</b>.</div>
+  <div class="band">🎯 Chuẩn phân tích: Band 8.0 · 4 tiêu chí</div>
 </header>
-<nav class="nav"><div class="wrap row"><a class="home" href="00-nen-chung.html">★ Nền chung</a><a class="" href="01-line-graph.html">1·Line</a><a class="" href="02-bar-chart.html">2·Bar</a><a class=" cur" href="03-pie-chart.html">3·Pie</a><a class="" href="04-table.html">4·Table</a><a class="" href="05-mixed-charts.html">5·Mixed</a><a class="" href="06-process.html">6·Process</a><a class="" href="07-map.html">7·Map</a></div></nav>
-<main class="wrap" style="padding-top:6px">
-<section class="type" style="margin-top:12px" id="pie"><div class="type-head"><span class="no">3</span><div><h2>PIE CHART — Biểu đồ tròn</h2><div class="en">Parts of a whole · always %</div></div></div><div class="type-body"><div class="def"><b>Pie chart</b> — hình tròn chia phần của một tổng thể, đơn vị <b>luôn là %</b>, tổng = 100%. Thường có &gt;1 biểu đồ. Chia <b>xu hướng</b> (nhiều mốc thời gian) vs <b>so sánh</b> (nhiều đối tượng cùng lúc).</div><div class="key"><b>🔑 Với pie CÓ nhiều mốc thời gian:</b> tả MỘT năm dùng từ tĩnh (<i>accounted for</i>); tả THAY ĐỔI giữa các năm dùng từ động (<i>rose / fell</i>). Đây là lỗi học viên A2 hay lẫn nhất.</div><div class="blk"><h3><span class="ic b3">🏗️</span>Cấu trúc 4 đoạn</h3><div class="steps"><div class="step"><div class="sh"><b>1</b>INTRO</div>Đơn vị % → dùng <i>the proportion / percentage of</i>.</div><div class="step"><div class="sh"><b>2</b>OVERVIEW</div>Hạng mục lớn nhất (mọi năm) + hạng mục đổi mạnh nhất / đổi ngôi. Không số.</div><div class="step"><div class="sh"><b>3</b>BODY 1</div>Hạng mục lớn nhất, HOẶC nhóm hạng mục tăng.</div><div class="step"><div class="sh"><b>4</b>BODY 2</div>Hạng mục còn lại, HOẶC nhóm giảm.</div></div></div><div class="blk"><h3><span class="ic b4">🔤</span>Từ vựng đặc thù pie</h3><b>Động từ chiếm tỷ trọng:</b> <span class="term">account for · make up · constitute · represent · comprise</span> — <i>Brand A accounted for 35% of the total.</i><br><b>% → phân số/chữ (tránh lặp số):</b><table><tr><th>%</th><th>Cách nói</th></tr><tr><td>50%</td><td>exactly half</td></tr><tr><td>45%</td><td>nearly half</td></tr><tr><td>33%</td><td>a third</td></tr><tr><td>25%</td><td>a quarter</td></tr><tr><td>20%</td><td>a fifth</td></tr><tr><td>10%</td><td>a tenth</td></tr><tr><td>&gt;50%</td><td>just over half</td></tr><tr><td>≈30%</td><td>just under a third</td></tr></table><b>Cụm:</b> the largest/smallest share · the highest proportion · was held by · a small proportion of.</div><div class="dd"><div class="col do"><h4>✔ NÊN</h4><ul class=""><li>Focus vào tỷ trọng &amp; so sánh, KHÔNG mọi con số</li><li>Gom hạng mục nhỏ, nêu cái lớn/nhỏ nhất</li><li>Pie nhiều mốc: phân biệt tĩnh (accounted for) vs động (rose)</li></ul></div><div class="col dont"><h4>✘ TRÁNH</h4><ul class=""><li>Đưa số vào Overview</li><li>Viết hết 6+ con số một cách máy móc</li><li>Quên nêu hạng mục "đổi ngôi" (lớn nhất năm này ≠ năm kia)</li></ul></div></div><div class="rule"><b>⚠️ Chú ý làm tròn:</b> đề gốc đôi khi tổng ≠ 100% (99% / 101%) do làm tròn — giữ nguyên số như biểu đồ, không tự "sửa".</div><div class="check"><b>✅ CHECKLIST 4 TIÊU CHÍ</b><table><tr><th></th><th>Tự kiểm tra trước khi nộp</th></tr><tr><td>TA</td><td>Overview nêu lớn nhất + đổi mạnh/đổi ngôi, không số? Nêu đủ hạng mục?</td></tr><tr><td>CC</td><td>Chia nhóm (lớn/nhỏ hoặc tăng/giảm)? Câu tín hiệu đầu Body?</td></tr><tr><td>LR</td><td>Dùng account for / make up? Quy đổi ≥2 số sang phân số?</td></tr><tr><td>GRA</td><td>Pie 1 năm: cấm rise/fall. Pie nhiều mốc: tĩnh vs động đúng chỗ?</td></tr></table></div></div></section>
-</main>
-</body>
-</html>
+<nav class="nav"><div class="wrap row"><a class="home" href="00-nen-chung.html">★ Nền chung</a><a class="" href="01-line-graph.html">1·Line</a><a class="" href="02-bar-chart.html">2·Bar</a><a class="cur" href="03-pie-chart.html">3·Pie</a><a class="" href="04-table.html">4·Table</a><a class="" href="05-mixed-charts.html">5·Mixed</a><a class="" href="06-process.html">6·Process</a><a class="" href="07-map.html">7·Map</a></div></nav>
+<main class="wrap">
+<section class="sec" id="s1"><div class="sec-head"><span class="no">1</span><h2>Dạng này là gì / Nhận diện</h2></div><div class="sec-body"><div class="def"><b>Pie chart</b> — hình tròn chia phần của một tổng thể, đơn vị <b>luôn là %</b>, tổng = 100%. Thường có &gt;1 biểu đồ. Chia <b>xu hướng</b> (nhiều mốc thời gian) vs <b>so sánh</b> (nhiều đối tượng cùng một lúc).</div><div class="key"><b>🔑 Key point:</b> với pie CÓ nhiều mốc thời gian — tả MỘT năm dùng từ <b>tĩnh</b> (<i>accounted for</i>), tả THAY ĐỔI giữa các năm dùng từ <b>động</b> (<i>rose / fell</i>). Đây là chỗ học viên hay lẫn nhất. Focus vào <b>tỷ trọng &amp; so sánh</b>, không đọc mọi con số.</div><h3 class="blk"><span class="ic">🔎</span>Bước nhận diện</h3><table><tr><th>Cần xác định</th><th>Ví dụ</th></tr><tr><td class="lbl">Số biểu đồ &amp; thời gian</td><td>2 pie 1980/1990 (xu hướng) · 3 pie cùng năm (so sánh)</td></tr><tr><td class="lbl">Đối tượng</td><td>các nguồn năng lượng · các hạng mục chi tiêu</td></tr><tr><td class="lbl">Đơn vị</td><td>LUÔN %</td></tr><tr><td class="lbl">Số hạng mục</td><td>chú ý số mục có thể KHÁC nhau giữa các pie</td></tr></table><div class="note"><b>Bẫy nhận diện:</b> số hạng mục có thể khác nhau giữa 2 năm (vd 2000 xuất hiện mục "videos" mà 1991 không có) — mục mới xuất hiện là đặc điểm nổi bật phải nêu.</div></div></section><section class="sec" id="s2"><div class="sec-head"><span class="no">2</span><h2>Chọn thì &amp; Nguyên tắc gốc</h2></div><div class="sec-body"><table><tr><th>Tình huống</th><th>Thì / ngôn ngữ</th><th>Ví dụ</th></tr><tr><td class="lbl">Pie một thời điểm</td><td>Past/present + SO SÁNH</td><td>X accounted for the largest share</td></tr><tr><td class="lbl">Pie nhiều mốc — tả một năm</td><td>tĩnh: accounted for / made up</td><td>oil made up 42% in 1980</td></tr><tr><td class="lbl">Pie nhiều mốc — tả thay đổi</td><td>động: rose / fell</td><td>the share of nuclear power doubled</td></tr></table><div class="rule"><b>⚠️ Nguyên tắc gốc:</b> pie MỘT thời điểm = dữ liệu tĩnh → CẤM rise/fall. Pie NHIỀU mốc = phân biệt rõ câu tĩnh (một năm) vs câu động (so sánh giữa năm).</div><div class="note"><b>Làm tròn:</b> đề gốc đôi khi tổng ≠ 100% (99 / 101) do làm tròn — giữ nguyên số như biểu đồ, không tự "sửa".</div></div></section><section class="sec" id="s3"><div class="sec-head"><span class="no">3</span><h2>Cấu trúc 4 đoạn (kèm câu dẫn · từ vựng · ngữ pháp)</h2></div><div class="sec-body"><h3 class="blk"><span class="ic">🧭</span>Nguyên tắc chia đoạn của pie chart</h3><ul class="tight"><li><b>Pie so sánh:</b> Body 1 = hạng mục lớn nhất + vài mục lớn · Body 2 = các mục nhỏ còn lại.</li><li><b>Pie nhiều mốc:</b> Body 1 = nhóm hạng mục TĂNG · Body 2 = nhóm GIẢM. Hoặc chia theo từng pie/năm.</li><li>Luôn nêu "đổi ngôi" nếu hạng mục lớn nhất năm này khác năm kia.</li></ul><div class="para"><div class="ph"><b>Đoạn 1</b> INTRODUCTION — Paraphrase đề</div><p class="vn">Đơn vị % → dùng <i>the proportion / percentage of</i>.</p><span class="frame">The pie charts compare + the proportion of + [nội dung] + [in nơi chốn] + [in các năm].</span><div class="mini-h">Câu dẫn học thuật</div><ul class="tight"><li><span class="eg">The pie charts illustrate the proportion of energy produced from five sources in one country in 1985 and 2003.</span></li><li><span class="eg">The two pie charts compare the main reasons why people visited public libraries in Britain in 1991 and 2000.</span></li></ul><div class="led"><b>LR focus:</b> <i>the percentage of</i> → <span class="term">the proportion of · the share of</span>; nhiều pie → chủ ngữ số nhiều <i>the pie charts compare…</i></div></div><div class="para"><div class="ph"><b>Đoạn 2</b> OVERVIEW — 2 đặc điểm nổi bật · KHÔNG số</div><span class="frame">Overall, [X] accounted for the largest share (in both years), while [Y] made up the smallest.
+Overall, the share of [X] rose, whereas that of [Y] fell.  (pie nhiều mốc)</span><div class="mini-h">Câu dẫn học thuật</div><ul class="tight"><li><span class="eg">Overall, it is clear that [X] represented the largest proportion throughout the period.</span></li><li><span class="eg">Overall, [X] remained the most popular, while a new category appeared in [năm].</span></li></ul><div class="led"><b>CC focus:</b> phép thế <span class="term">that of</span> tránh lặp "share/proportion".</div></div><div class="para"><div class="ph"><b>Đoạn 3</b> BODY 1 — Hạng mục lớn / nhóm tăng</div><div class="mini-h">Câu dẫn</div><ul class="tight"><li><span class="eg">Looking at the largest categories first,…</span></li><li><span class="eg">Regarding the sources that increased,…</span></li></ul><div class="mini-h">Khung câu</div><span class="frame">[X] accounted for [số]% of the total, the largest share, followed by [Y] at [số]%.
+The proportion of [X] rose from [số]% to [số]% over the period.</span></div><div class="para"><div class="ph"><b>Đoạn 4</b> BODY 2 — Hạng mục nhỏ / nhóm giảm</div><div class="mini-h">Câu dẫn tương phản</div><ul class="tight"><li><span class="eg">By contrast, the remaining categories each made up less than [số]%.</span></li><li><span class="eg">Turning to the smaller shares,…</span></li></ul></div><h3 class="blk"><span class="ic">🔤</span>Từ vựng &amp; Collocation theo dạng (LR Band 8)</h3><h4 class="sub">Động từ chiếm tỷ trọng (đặc sản pie)</h4><ul class="tight"><li><span class="term">account for · make up · constitute · represent · comprise</span> — <i>Brand A accounted for 35% of the total.</i></li></ul><h4 class="sub">% → phân số / chữ (tránh lặp số)</h4><table><tr><th>%</th><th>Cách nói</th></tr><tr><td class="lbl">50%</td><td>exactly half</td></tr><tr><td class="lbl">45%</td><td>nearly half</td></tr><tr><td class="lbl">33%</td><td>a third</td></tr><tr><td class="lbl">25%</td><td>a quarter</td></tr><tr><td class="lbl">20%</td><td>a fifth</td></tr><tr><td class="lbl">10%</td><td>a tenth</td></tr><tr><td class="lbl">&gt;50%</td><td>just over half</td></tr><tr><td class="lbl">≈30%</td><td>just under a third</td></tr></table><div class="key">⭐ <b>Cụm đắt của pie:</b> <span class="term">the largest/smallest share · the highest proportion · was held by · a significant/small proportion of · the remaining X%</span>.</div><h3 class="blk"><span class="ic">💬</span>Cụm câu mẫu (Useful phrases)</h3><ul class="tight"><li><span class="eg">[X] made up the largest proportion, at [số]% of the total.</span></li><li><span class="eg">Just under a quarter of [tổng thể] was accounted for by [X].</span></li><li><span class="eg">The remaining [số]% was made up of [Y] and [Z].</span></li><li><span class="eg">The share of [X] rose from [a]% to [b]%, whereas that of [Y] fell.</span></li></ul><h3 class="blk"><span class="ic">📐</span>Grammar focus cho pie chart (GRA Band 8)</h3><h4 class="sub">① Chủ động ↔ bị động với tỷ trọng</h4><span class="frame">[X] accounted for 35%.  (chủ động)
+35% was accounted for by [X].  ·  35% of the total was made up of [X].  (bị động)</span><h4 class="sub">② Phân số &amp; bội số</h4><ul class="tight"><li><i>one third · a quarter · half of the total</i> · pie nhiều mốc: <i>doubled · halved</i></li></ul><h4 class="sub">③ Mệnh đề rút gọn nối cực trị</h4><span class="frame">[X] dominated the chart, accounting for over half of the total.</span></div></section><section class="sec" id="s4"><div class="sec-head"><span class="no">4</span><h2>LUẬT CỨNG — Do's &amp; Don'ts</h2></div><div class="sec-body"><div class="dd"><div class="col do"><h4>✔ NÊN</h4><ul class="tight"><li>Focus tỷ trọng &amp; so sánh, KHÔNG mọi con số</li><li>Gom hạng mục nhỏ, nêu cái lớn/nhỏ nhất</li><li>Pie nhiều mốc: phân biệt tĩnh (accounted for) vs động (rose)</li><li>Nêu hạng mục "đổi ngôi" / mục mới xuất hiện</li></ul></div><div class="col dont"><h4>✘ TRÁNH</h4><ul class="tight"><li>Đưa số vào Overview</li><li>Viết hết 6+ con số một cách máy móc</li><li><span class="warn">Pie một năm mà dùng rise/fall</span></li><li>Quên mục lớn nhất đổi giữa các năm</li></ul></div></div><div class="rule"><b>⚠️ LUẬT CỨNG:</b> pie <b>một thời điểm</b> = tĩnh → CẤM rise/fall (chỉ account for / make up + so sánh). Pie <b>nhiều mốc</b> mới dùng động từ thay đổi, và phải tách rõ câu tĩnh vs câu động.</div></div></section><section class="sec" id="s5"><div class="sec-head"><span class="no">5</span><h2>Checklist 4 tiêu chí (Band 8.0)</h2></div><div class="sec-body"><div class="check"><table><tr><th>Tiêu chí</th><th>Hành vi Band 8.0 cần đạt</th></tr><tr><td class="crit">TA</td><td>Overview nêu lớn nhất + đổi mạnh/đổi ngôi, KHÔNG số · nêu đủ hạng mục · chọn tỷ trọng đắt <span class="band-tag">B8</span></td></tr><tr><td class="crit">CC</td><td>Chia nhóm (lớn/nhỏ hoặc tăng/giảm) · câu tín hiệu đầu Body · phép thế "that of" <span class="band-tag">B8</span></td></tr><tr><td class="crit">LR</td><td>Dùng account for / make up / constitute · quy đổi ≥2 số sang phân số · không lặp "proportion" <span class="band-tag">B8</span></td></tr><tr><td class="crit">GRA</td><td>Pie 1 năm cấm rise/fall · pie nhiều mốc tách tĩnh vs động đúng chỗ · chủ động↔bị động tỷ trọng <span class="band-tag">B8</span></td></tr></table></div><div class="key">🎯 <b>Tự soát nhanh:</b> Overview có số không (phải KHÔNG)? · Đã đổi ≥2 số sang phân số? · Có nêu mục lớn nhất/đổi ngôi? · Pie 1 năm có lỡ dùng rose/fell?</div></div></section>
+</main></body></html>
