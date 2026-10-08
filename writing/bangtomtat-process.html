@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="vi"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Process — Sơ đồ quy trình — IELTS Writing Task 1</title>
+<title>Process — Sơ đồ quy trình — IELTS Writing Task 1 (Band 8.0)</title>
 <style>
 :root{
   --paper:#FDFDFB; --paper-line:#EEF1F5; --ink:#252830; --ink-soft:#666C78;
@@ -14,93 +14,88 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Roboto','Segoe UI',system-ui,sans-serif;color:var(--ink);font-size:16px;line-height:1.7;background:var(--paper);padding-bottom:80px}
-.wrap{max-width:920px;margin:0 auto;padding:0 18px}
-.hero{text-align:center;padding:34px 0 8px}
-.hero .kicker{letter-spacing:3px;font-size:13px;font-weight:700;color:var(--purple)}
-.hero h1{font-size:38px;color:var(--ink);font-weight:800;line-height:1.1;margin-top:4px}
-.hero .sub{font-size:15px;color:var(--ink-soft);margin-top:10px;max-width:640px;margin-left:auto;margin-right:auto}
-.hero .meta{margin-top:10px;font-size:12.5px;color:var(--ink-soft)}
+.wrap{max-width:940px;margin:0 auto;padding:0 18px}
+.filehero{text-align:center;padding:30px 0 6px}
+.filehero .kicker{letter-spacing:3px;font-size:12px;font-weight:700;color:var(--purple)}
+.filehero h1{font-size:34px;color:var(--ink);font-weight:800;line-height:1.12;margin-top:5px}
+.filehero .sub{font-size:14.5px;color:var(--ink-soft);margin-top:8px;max-width:660px;margin-left:auto;margin-right:auto}
+.filehero .band{display:inline-block;margin-top:10px;background:var(--purple-bg);color:var(--purple);font-weight:700;font-size:13px;border-radius:999px;padding:4px 16px}
 
-.nav{position:sticky;top:0;z-index:30;background:rgba(253,253,251,.97);backdrop-filter:blur(5px);padding:10px 0;border-bottom:2px solid var(--pink-bg);margin-bottom:8px}
+.nav{position:sticky;top:0;z-index:30;background:rgba(253,253,251,.97);backdrop-filter:blur(5px);padding:9px 0;border-bottom:2px solid var(--pink-bg);margin-bottom:10px}
 .nav .row{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
-.nav a{text-decoration:none;background:#fff;border:1.5px solid #E4C8DA;border-radius:999px;padding:5px 13px;font-size:12.5px;font-weight:700;color:var(--pink)}
+.nav a{text-decoration:none;background:#fff;border:1.5px solid #E4C8DA;border-radius:999px;padding:5px 12px;font-size:12px;font-weight:700;color:var(--pink)}
 .nav a:hover{background:var(--pink-soft)}
 .nav a.home{border-color:var(--purple);color:var(--purple)}
+.nav a.cur{background:var(--purple);color:#fff;border-color:var(--purple)}
 
-/* dạng section */
-.type{scroll-margin-top:64px;margin:40px 0 0}
-.type-head{display:flex;align-items:center;gap:14px;background:var(--purple);color:#fff;border-radius:var(--radius) var(--radius) 0 0;padding:16px 22px}
-.type-head .no{background:#fff;color:var(--purple);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:19px;flex:0 0 auto}
-.type-head h2{font-size:24px;font-weight:800;line-height:1.15}
-.type-head .en{font-size:13px;font-weight:600;opacity:.85;margin-top:2px}
-.type-body{border:2px solid var(--purple-bg);border-top:none;border-radius:0 0 var(--radius) var(--radius);padding:6px 22px 22px;background:#fff}
+/* section (mục 1..5) */
+.sec{scroll-margin-top:60px;margin:26px 0 0;border:2px solid var(--purple-bg);border-radius:var(--radius);overflow:hidden}
+.sec-head{display:flex;align-items:center;gap:13px;background:var(--purple);color:#fff;padding:14px 20px}
+.sec-head .no{background:#fff;color:var(--purple);width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:17px;flex:0 0 auto}
+.sec-head h2{font-size:20px;font-weight:800;line-height:1.15}
+.sec-body{background:#fff;padding:8px 20px 20px}
 
-/* block trong mỗi dạng */
-.blk{margin:20px 0 0}
-.blk h3{font-size:16.5px;font-weight:800;color:var(--ink);display:flex;align-items:center;gap:9px;padding-bottom:6px;border-bottom:2px solid #EFEFEF;margin-bottom:10px}
-.blk h3 .ic{width:24px;height:24px;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;flex:0 0 auto}
-.ic.b1{background:var(--blue-bg)} .ic.b2{background:var(--green-bg)} .ic.b3{background:var(--purple-bg)}
-.ic.b4{background:var(--orange-bg)} .ic.b5{background:var(--pink-bg)} .ic.b6{background:var(--red-bg)}
-
-.def{background:var(--pink-soft);border-left:4px solid var(--pink);border-radius:6px;padding:12px 16px;font-size:15px}
-.key{background:#FFF8E6;border:1px solid #F0DFA6;border-radius:8px;padding:11px 15px;font-size:14px;margin-top:10px}
+.def{background:var(--pink-soft);border-left:4px solid var(--pink);border-radius:6px;padding:12px 16px;font-size:15px;margin-top:14px}
+.key{background:#FFF8E6;border:1px solid #F0DFA6;border-radius:8px;padding:11px 15px;font-size:14px;margin-top:12px}
 .key b{color:var(--orange)}
+.note{background:var(--blue-bg);border:1px solid #BFD3EE;border-radius:8px;padding:11px 15px;font-size:14px;margin-top:12px}
+.note b{color:var(--blue)}
 
-ul{padding-left:20px;margin:4px 0}
-li{margin:5px 0}
+h3.blk{font-size:16px;font-weight:800;color:var(--ink);display:flex;align-items:center;gap:9px;padding-bottom:6px;border-bottom:2px solid #EFEFEF;margin:18px 0 10px}
+h3.blk .ic{width:24px;height:24px;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;flex:0 0 auto;background:var(--blue-bg)}
+h4.sub{font-size:14px;font-weight:800;color:var(--purple);margin:14px 0 4px;letter-spacing:.2px}
+
+ul{padding-left:20px;margin:4px 0}li{margin:5px 0}
 .tight li{margin:3px 0}
 .eg{color:var(--green);font-style:italic}
 .term{color:var(--blue);font-weight:600}
 .warn{color:var(--red);font-weight:700}
+.vn{color:var(--ink-soft);font-size:13px}
 
-/* structure 4 đoạn */
-.steps{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:8px}
-.step{border:1.5px solid #E8E8E8;border-radius:10px;padding:13px 16px;font-size:14px}
-.step .sh{font-size:13px;font-weight:800;letter-spacing:.4px;color:var(--purple);margin-bottom:5px}
-.step .sh b{background:var(--purple);color:#fff;border-radius:5px;padding:1px 7px;margin-right:6px;font-size:12px}
-.step .frame{display:block;background:#F6F4FB;border:1px dashed #C9BEE6;border-radius:6px;padding:6px 10px;margin-top:6px;font-family:'Consolas',monospace;font-size:12.5px;color:#4a3a7a}
+table{width:100%;border-collapse:collapse;font-size:13.5px;margin:8px 0}
+th,td{border:1px solid #E7E7E7;padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--pink-soft);font-size:12px;letter-spacing:.3px}
+td.lbl{font-weight:700;color:var(--ink-soft);white-space:nowrap;width:1%}
 
-/* table */
-table{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0}
-th,td{border:1px solid #E7E7E7;padding:7px 11px;text-align:left;vertical-align:top}
-th{background:var(--pink-soft);font-size:12.5px;letter-spacing:.3px}
-td:first-child{font-weight:600;color:var(--ink-soft);white-space:nowrap}
+/* 4-para */
+.para{border:1.5px solid #E8E8E8;border-radius:10px;padding:14px 16px;margin:12px 0;background:#FCFCFE}
+.para .ph{font-size:13.5px;font-weight:800;letter-spacing:.3px;color:var(--purple);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.para .ph b{background:var(--purple);color:#fff;border-radius:6px;padding:2px 9px;font-size:12px}
+.frame{display:block;background:#F6F4FB;border:1px dashed #C9BEE6;border-radius:6px;padding:8px 12px;margin:8px 0;font-family:'Consolas',monospace;font-size:12.5px;color:#4a3a7a;line-height:1.6}
+.led{margin:8px 0 4px;font-size:13.5px}
+.led b{color:var(--green)}
+.mini-h{font-size:12.5px;font-weight:800;color:var(--ink-soft);letter-spacing:.4px;margin:10px 0 3px;text-transform:uppercase}
 
-/* do/don't */
 .dd{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:6px}
 .dd .col{border-radius:10px;padding:12px 16px;font-size:14px}
 .dd .do{background:var(--green-bg);border:1.5px solid var(--green)}
 .dd .dont{background:var(--red-bg);border:1.5px solid var(--red)}
 .dd h4{font-size:14px;margin-bottom:6px}
-.dd .do h4{color:var(--green)} .dd .dont h4{color:var(--red)}
+.dd .do h4{color:var(--green)}.dd .dont h4{color:var(--red)}
 .dd ul{padding-left:18px}
-
-.rule{background:var(--red-bg);border:1.5px solid var(--red);border-radius:8px;padding:11px 15px;font-size:14px;margin-top:10px}
+.rule{background:var(--red-bg);border:1.5px solid var(--red);border-radius:8px;padding:11px 15px;font-size:14px;margin-top:12px}
 .rule b{color:var(--red)}
-.check{background:var(--green-bg);border:1.5px solid var(--green);border-radius:8px;padding:11px 15px;font-size:14px;margin-top:10px}
-.check b{color:var(--green)}
-.check table td:first-child{color:var(--green);font-weight:800;width:44px}
+
+.check{margin-top:6px}
+.check table td.crit{color:var(--green);font-weight:800;width:52px;background:var(--green-bg)}
+.band-tag{font-size:11px;font-weight:700;color:var(--purple);background:var(--purple-bg);border-radius:5px;padding:1px 7px;margin-left:4px}
 
 @media(max-width:640px){
-  .hero h1{font-size:28px}
-  .steps,.dd{grid-template-columns:1fr}
+  .filehero h1{font-size:26px}
+  .dd{grid-template-columns:1fr}
   table{display:block;overflow-x:auto}
 }
-
-.nav a.cur{background:var(--purple);color:#fff;border-color:var(--purple)}
-.filehero{text-align:center;padding:26px 0 4px}
-.filehero .kicker{letter-spacing:3px;font-size:12px;font-weight:700;color:var(--purple)}
-.filehero h1{font-size:30px;color:var(--ink);font-weight:800;line-height:1.15;margin-top:4px}
-.filehero .sub{font-size:14px;color:var(--ink-soft);margin-top:6px}
 </style></head><body>
 <header class="filehero wrap">
   <div class="kicker">IELTS WRITING TASK 1 · CẨM NANG THEO DẠNG</div>
   <h1>Process — Sơ đồ quy trình</h1>
-  <div class="sub">Natural (chủ động) vs man-made (bị động)</div>
+  <div class="sub">Natural (chủ động) vs man-made (bị động). Kiến thức neo <b>Band 8.0</b> cho cả 4 tiêu chí (TA · CC · LR · GRA), rút từ skill <b>ielts-writing-task1-sample</b>.</div>
+  <div class="band">🎯 Chuẩn phân tích: Band 8.0 · 4 tiêu chí</div>
 </header>
-<nav class="nav"><div class="wrap row"><a class="home" href="00-nen-chung.html">★ Nền chung</a><a class="" href="01-line-graph.html">1·Line</a><a class="" href="02-bar-chart.html">2·Bar</a><a class="" href="03-pie-chart.html">3·Pie</a><a class="" href="04-table.html">4·Table</a><a class="" href="05-mixed-charts.html">5·Mixed</a><a class=" cur" href="06-process.html">6·Process</a><a class="" href="07-map.html">7·Map</a></div></nav>
-<main class="wrap" style="padding-top:6px">
-<section class="type" style="margin-top:12px" id="process"><div class="type-head"><span class="no">6</span><div><h2>PROCESS — Sơ đồ quy trình</h2><div class="en">Natural (active) vs man-made (passive)</div></div></div><div class="type-body"><div class="def"><b>Process</b> — sơ đồ quy trình. Hai loại: <b>Natural</b> (vòng đời sinh vật, không con người → CHỦ ĐỘNG) vs <b>Man-made</b> (sản xuất/máy móc → nhiều BỊ ĐỘNG). Bám đúng thứ tự giai đoạn/mũi tên.</div><div class="key"><b>🔑 Không có số liệu để so sánh</b> — thay vào đó tả <b>số giai đoạn, biến đổi hình dạng, thời lượng/kích thước</b> theo đúng trình tự. Present simple là thì chủ đạo.</div><div class="blk"><h3><span class="ic b3">🏗️</span>Cấu trúc 4 đoạn</h3><div class="steps"><div class="step"><div class="sh"><b>1</b>INTRO</div><i>The process shows the stages in the life cycle of / how X is made / the growth of X.</i></div><div class="step"><div class="sh"><b>2</b>OVERVIEW</div>Số giai đoạn + điểm đầu → điểm cuối + tổng thời gian; cyclical nêu vòng lặp.<span class="frame">Overall, the process comprises [N] main stages, beginning with … and ending with …</span></div><div class="step"><div class="sh"><b>3</b>BODY 1</div>Nửa đầu các giai đoạn — theo thứ tự.</div><div class="step"><div class="sh"><b>4</b>BODY 2</div>Nửa sau; natural → kết vòng (<i>restarting the cycle</i>).</div></div></div><div class="blk"><h3><span class="ic b4">🔤</span>Từ vựng đặc thù process</h3><b>Nối tuần tự:</b> <span class="term">First · Initially · Next · After that · Subsequently · Once … · At this stage · Finally · At the final stage</span>.<br><b>Natural — động từ biến đổi (chủ động):</b> become · change · develop into · grow into · turn into · <span class="term">transform into</span> (thành dạng mới) ≠ <span class="warn">evolve</span> (tiến hóa dài hạn — thường KHÔNG hợp).<br><b>Man-made — bị động:</b> <span class="term">is collected · is heated · is processed · is converted into · are packaged</span>.<br><b>Thời gian/kích thước (natural):</b> <i>During a period of 4–7 days, …</i> (ĐÚNG) · grow to · reach up to · between … and … · for up to 15 days.</div><div class="dd"><div class="col do"><h4>✔ NÊN</h4><ul class=""><li>Bám đúng thứ tự mũi tên</li><li>Man-made: bị động + present simple</li><li>Mệnh đề rút gọn: <i>…, transforming into…</i></li></ul></div><div class="col dont"><h4>✘ TRÁNH</h4><ul class=""><li><b>Tính từ cảm tính</b> (<i>a huge butterfly</i>) → ý kiến, trừ TA</li><li>"takes 4–7 days to V" (mơ hồ) → dùng "During a period of…"</li><li>Viết dưới 150 từ (rủi ro đặc thù của process)</li></ul></div></div><div class="rule"><b>⚠️ LUẬT CỨNG:</b> Không đưa ý kiến/tính từ cảm tính. Man-made ưu tiên bị động; Natural chủ động. Không có số liệu để "so sánh" như graph.</div><div class="check"><b>✅ CHECKLIST 4 TIÊU CHÍ</b><table><tr><th></th><th>Tự kiểm tra trước khi nộp</th></tr><tr><td>TA</td><td>Bám đúng số &amp; thứ tự giai đoạn? Overview nêu số bước + đầu→cuối?</td></tr><tr><td>CC</td><td>Nối tuần tự đa dạng (First/Next/Subsequently/Finally)?</td></tr><tr><td>LR</td><td>Động từ biến đổi đúng (transform vs evolve)? Không tính từ cảm tính?</td></tr><tr><td>GRA</td><td>Present simple nhất quán? Man-made dùng passive? Đủ 150 từ?</td></tr></table></div></div></section>
-</main>
-</body>
-</html>
+<nav class="nav"><div class="wrap row"><a class="home" href="00-nen-chung.html">★ Nền chung</a><a class="" href="01-line-graph.html">1·Line</a><a class="" href="02-bar-chart.html">2·Bar</a><a class="" href="03-pie-chart.html">3·Pie</a><a class="" href="04-table.html">4·Table</a><a class="" href="05-mixed-charts.html">5·Mixed</a><a class="cur" href="06-process.html">6·Process</a><a class="" href="07-map.html">7·Map</a></div></nav>
+<main class="wrap">
+<section class="sec" id="s1"><div class="sec-head"><span class="no">1</span><h2>Dạng này là gì / Nhận diện</h2></div><div class="sec-body"><div class="def"><b>Process</b> — sơ đồ quy trình. Hai loại: <b>Natural</b> (vòng đời sinh vật, không con người → CHỦ ĐỘNG) vs <b>Man-made</b> (sản xuất/máy móc → nhiều BỊ ĐỘNG). Bám đúng thứ tự giai đoạn/mũi tên.</div><div class="key"><b>🔑 Key point:</b> KHÔNG có số liệu để so sánh — thay vào đó tả <b>số giai đoạn, biến đổi hình dạng, thời lượng/kích thước</b> theo đúng trình tự. Present simple là thì chủ đạo. Mũi tên khép vòng = cyclical → nêu vòng lặp.</div><h3 class="blk"><span class="ic">🔎</span>Bước nhận diện</h3><table><tr><th>Cần xác định</th><th>Ví dụ</th></tr><tr><td class="lbl">Natural hay man-made</td><td>vòng đời bướm = natural · làm cà phê = man-made</td></tr><tr><td class="lbl">Số giai đoạn</td><td>đếm số bước / mũi tên</td></tr><tr><td class="lbl">Hướng mũi tên</td><td>khép vòng = cyclical</td></tr><tr><td class="lbl">Extra info</td><td>thời lượng, kích thước, môi trường mỗi bước</td></tr></table><div class="note"><b>Rủi ro đặc thù:</b> hay viết THIẾU TỪ (&lt;150). Tự soát: sót giai đoạn nào? câu quá cộc? đủ đa dạng cấu trúc chưa?</div></div></section><section class="sec" id="s2"><div class="sec-head"><span class="no">2</span><h2>Chọn thì &amp; Nguyên tắc gốc</h2></div><div class="sec-body"><table><tr><th>Loại process</th><th>Thể</th><th>Thì</th></tr><tr><td class="lbl">Natural (vòng đời)</td><td>CHỦ ĐỘNG</td><td>Present simple + present perfect ở mệnh đề mốc</td></tr><tr><td class="lbl">Man-made (sản xuất)</td><td>nhiều BỊ ĐỘNG</td><td>Present simple passive (is heated, are packaged)</td></tr></table><div class="rule"><b>⚠️ Nguyên tắc gốc:</b> Present simple xuyên suốt. Natural = chủ động; Man-made = ưu tiên bị động. KHÔNG có xu hướng để so sánh như graph — chỉ mô tả tuần tự khách quan.</div><div class="note"><b>Present perfect trong mệnh đề mốc:</b> <i>Once the caterpillar <b>has reached</b> 2 cm, it turns into a chrysalis</i> · <i>By the end of this phase, the chrysalis <b>has transformed</b> into…</i></div></div></section><section class="sec" id="s3"><div class="sec-head"><span class="no">3</span><h2>Cấu trúc 4 đoạn (kèm câu dẫn · từ vựng · ngữ pháp)</h2></div><div class="sec-body"><h3 class="blk"><span class="ic">🧭</span>Nguyên tắc chia đoạn của process</h3><ul class="tight"><li>Chia theo <b>giai đoạn chính</b>: Body 1 = nửa đầu các bước · Body 2 = nửa sau.</li><li>Natural cyclical → Body 2 kết bằng vòng lặp (<i>restarting the cycle</i>).</li><li>Bám ĐÚNG thứ tự mũi tên — không nhảy bước.</li></ul><div class="para"><div class="ph"><b>Đoạn 1</b> INTRODUCTION — Paraphrase đề</div><span class="frame">The process shows the stages in the life cycle of + [tên].
+The diagram illustrates how + [sản phẩm] + is made / is produced.</span><div class="mini-h">Câu dẫn học thuật (3 công thức natural)</div><ul class="tight"><li><span class="eg">The process shows the stages in the life cycle of the Monarch butterfly.</span></li><li><span class="eg">The process shows how a Monarch butterfly grows during its lifespan.</span></li><li><span class="eg">The process shows the growth of a Monarch butterfly.</span></li></ul><div class="led"><b>LR focus:</b> man-made: <i>the process of producing X · the manufacture of X · how X is made</i>.</div></div><div class="para"><div class="ph"><b>Đoạn 2</b> OVERVIEW — số giai đoạn + đầu→cuối · KHÔNG chi tiết</div><span class="frame">Overall, the process comprises [N] main stages, beginning with [bước đầu] and ending with [bước cuối] (within approximately [thời gian]).</span><div class="mini-h">Câu dẫn học thuật</div><ul class="tight"><li><span class="eg">Overall, the life cycle of this insect comprises four main stages, transforming from an egg to an adult butterfly within approximately 6 to 10 weeks.</span></li></ul><div class="led"><b>LR focus:</b> <span class="term">comprises · consists of · can be divided into [N] stages</span>.</div></div><div class="para"><div class="ph"><b>Đoạn 3</b> BODY 1 — Các giai đoạn đầu (theo thứ tự)</div><div class="mini-h">Câu dẫn tuần tự</div><ul class="tight"><li><span class="eg">The process begins when / Initially, …</span></li><li><span class="eg">After around [thời gian], … · Once … has …, …</span></li></ul><div class="mini-h">Khung câu</div><span class="frame">The [X] starts life as [Y], which is [V-ed] on [nơi].
+After [thời gian], the [Y] develops into [Z].</span></div><div class="para"><div class="ph"><b>Đoạn 4</b> BODY 2 — Các giai đoạn cuối</div><div class="mini-h">Câu dẫn</div><ul class="tight"><li><span class="eg">At this stage, … · Subsequently, … · Finally, …</span></li><li><span class="eg">…, thereby restarting the cycle. (natural cyclical)</span></li></ul></div><h3 class="blk"><span class="ic">🔤</span>Từ vựng &amp; Collocation theo dạng (LR Band 8)</h3><h4 class="sub">Nối tuần tự</h4><ul class="tight"><li><span class="term">First · Initially · Next · After that · Subsequently · Once … · At this stage · Finally · At the final stage</span></li></ul><h4 class="sub">Natural — động từ biến đổi (chủ động)</h4><ul class="tight"><li>become · change · develop into · grow into · turn into · <span class="term">transform into</span> (thành dạng mới) ≠ <span class="warn">evolve</span> (tiến hóa dài hạn — thường KHÔNG hợp)</li></ul><h4 class="sub">Man-made — bị động</h4><ul class="tight"><li><span class="term">is collected · is heated · is processed · is converted into · are packaged · is transported</span></li></ul><h4 class="sub">Thời gian / kích thước (natural)</h4><ul class="tight"><li><i>During a period of 4–7 days, …</i> (ĐÚNG) · grow to · reach up to · between … and … · for up to 15 days</li></ul><div class="key">⭐ <b>transform ≠ evolve:</b> transform = biến thành dạng hoàn toàn mới (hợp vòng đời); evolve = tiến hóa qua nhiều thế hệ (thường sai ngữ cảnh).</div><h3 class="blk"><span class="ic">💬</span>Cụm câu mẫu (Useful phrases)</h3><ul class="tight"><li><span class="eg">The [X] starts life as an egg, which is laid on [nơi].</span></li><li><span class="eg">After around [thời gian], the eggs hatch into [Y].</span></li><li><span class="eg">Once the [Y] has reached [kích thước], it turns into [Z].</span></li><li><span class="eg">In the man-made process, the [nguyên liệu] is first collected and then heated.</span></li><li><span class="eg">Finally, the butterfly lays its eggs, thereby restarting the cycle.</span></li></ul><h3 class="blk"><span class="ic">📐</span>Grammar focus cho process (GRA Band 8)</h3><h4 class="sub">① Present simple (+ passive cho man-made)</h4><span class="frame">The beans are roasted and then ground.  (man-made, passive)
+The caterpillar feeds on leaves and grows bigger.  (natural, active)</span><h4 class="sub">② Mệnh đề thời gian: Once / When / After + V-ing</h4><span class="frame">Once the caterpillar has reached 2 cm, it turns into a chrysalis.</span><h4 class="sub">③ Mệnh đề rút gọn nối bước (đặc sản process)</h4><ul class="tight"><li><i>…, transforming into… · …, remaining in this state for 15 days · …, thereby restarting the cycle</i></li></ul></div></section><section class="sec" id="s4"><div class="sec-head"><span class="no">4</span><h2>LUẬT CỨNG — Do's &amp; Don'ts</h2></div><div class="sec-body"><div class="dd"><div class="col do"><h4>✔ NÊN</h4><ul class="tight"><li>Bám đúng số &amp; thứ tự giai đoạn</li><li>Man-made: bị động + present simple · Natural: chủ động</li><li>Mệnh đề rút gọn nối bước (…, transforming into…)</li><li>Nêu thời lượng/kích thước bằng "During a period of…"</li></ul></div><div class="col dont"><h4>✘ TRÁNH</h4><ul class="tight"><li><span class="warn">Tính từ cảm tính</span> (a huge butterfly) → ý kiến, trừ TA</li><li>"takes 4–7 days to V" (mơ hồ) → dùng "During a period of…"</li><li>Viết dưới 150 từ (rủi ro đặc thù)</li><li>Nhảy bước / đảo thứ tự mũi tên</li></ul></div></div><div class="rule"><b>⚠️ LUẬT CỨNG:</b> Không đưa ý kiến / tính từ cảm tính. Man-made ưu tiên bị động, Natural chủ động. KHÔNG có số liệu để "so sánh" như graph — chỉ mô tả tuần tự theo mũi tên.</div></div></section><section class="sec" id="s5"><div class="sec-head"><span class="no">5</span><h2>Checklist 4 tiêu chí (Band 8.0)</h2></div><div class="sec-body"><div class="check"><table><tr><th>Tiêu chí</th><th>Hành vi Band 8.0 cần đạt</th></tr><tr><td class="crit">TA</td><td>Bám đúng số &amp; thứ tự giai đoạn · overview nêu số bước + đầu→cuối · khách quan, không ý kiến <span class="band-tag">B8</span></td></tr><tr><td class="crit">CC</td><td>Nối tuần tự đa dạng (First/Next/Subsequently/Finally) · câu mở đoạn rõ · cyclical nêu vòng lặp <span class="band-tag">B8</span></td></tr><tr><td class="crit">LR</td><td>Động từ biến đổi đúng (transform ≠ evolve) · không tính từ cảm tính · từ chỉ thời lượng/kích thước <span class="band-tag">B8</span></td></tr><tr><td class="crit">GRA</td><td>Present simple nhất quán · man-made dùng passive · mệnh đề Once/When · mệnh đề rút gọn <span class="band-tag">B8</span></td></tr></table></div><div class="key">🎯 <b>Tự soát nhanh:</b> Có tính từ cảm tính lọt vào không? · Man-made đã dùng passive chưa? · Đủ 150 từ chưa? · Đúng thứ tự mũi tên?</div></div></section>
+</main></body></html>
