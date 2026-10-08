@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="vi"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Map — Bản đồ — IELTS Writing Task 1</title>
+<title>Map — Bản đồ — IELTS Writing Task 1 (Band 8.0)</title>
 <style>
 :root{
   --paper:#FDFDFB; --paper-line:#EEF1F5; --ink:#252830; --ink-soft:#666C78;
@@ -14,93 +14,86 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Roboto','Segoe UI',system-ui,sans-serif;color:var(--ink);font-size:16px;line-height:1.7;background:var(--paper);padding-bottom:80px}
-.wrap{max-width:920px;margin:0 auto;padding:0 18px}
-.hero{text-align:center;padding:34px 0 8px}
-.hero .kicker{letter-spacing:3px;font-size:13px;font-weight:700;color:var(--purple)}
-.hero h1{font-size:38px;color:var(--ink);font-weight:800;line-height:1.1;margin-top:4px}
-.hero .sub{font-size:15px;color:var(--ink-soft);margin-top:10px;max-width:640px;margin-left:auto;margin-right:auto}
-.hero .meta{margin-top:10px;font-size:12.5px;color:var(--ink-soft)}
+.wrap{max-width:940px;margin:0 auto;padding:0 18px}
+.filehero{text-align:center;padding:30px 0 6px}
+.filehero .kicker{letter-spacing:3px;font-size:12px;font-weight:700;color:var(--purple)}
+.filehero h1{font-size:34px;color:var(--ink);font-weight:800;line-height:1.12;margin-top:5px}
+.filehero .sub{font-size:14.5px;color:var(--ink-soft);margin-top:8px;max-width:660px;margin-left:auto;margin-right:auto}
+.filehero .band{display:inline-block;margin-top:10px;background:var(--purple-bg);color:var(--purple);font-weight:700;font-size:13px;border-radius:999px;padding:4px 16px}
 
-.nav{position:sticky;top:0;z-index:30;background:rgba(253,253,251,.97);backdrop-filter:blur(5px);padding:10px 0;border-bottom:2px solid var(--pink-bg);margin-bottom:8px}
+.nav{position:sticky;top:0;z-index:30;background:rgba(253,253,251,.97);backdrop-filter:blur(5px);padding:9px 0;border-bottom:2px solid var(--pink-bg);margin-bottom:10px}
 .nav .row{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
-.nav a{text-decoration:none;background:#fff;border:1.5px solid #E4C8DA;border-radius:999px;padding:5px 13px;font-size:12.5px;font-weight:700;color:var(--pink)}
+.nav a{text-decoration:none;background:#fff;border:1.5px solid #E4C8DA;border-radius:999px;padding:5px 12px;font-size:12px;font-weight:700;color:var(--pink)}
 .nav a:hover{background:var(--pink-soft)}
 .nav a.home{border-color:var(--purple);color:var(--purple)}
+.nav a.cur{background:var(--purple);color:#fff;border-color:var(--purple)}
 
-/* dạng section */
-.type{scroll-margin-top:64px;margin:40px 0 0}
-.type-head{display:flex;align-items:center;gap:14px;background:var(--purple);color:#fff;border-radius:var(--radius) var(--radius) 0 0;padding:16px 22px}
-.type-head .no{background:#fff;color:var(--purple);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:19px;flex:0 0 auto}
-.type-head h2{font-size:24px;font-weight:800;line-height:1.15}
-.type-head .en{font-size:13px;font-weight:600;opacity:.85;margin-top:2px}
-.type-body{border:2px solid var(--purple-bg);border-top:none;border-radius:0 0 var(--radius) var(--radius);padding:6px 22px 22px;background:#fff}
+/* section (mục 1..5) */
+.sec{scroll-margin-top:60px;margin:26px 0 0;border:2px solid var(--purple-bg);border-radius:var(--radius);overflow:hidden}
+.sec-head{display:flex;align-items:center;gap:13px;background:var(--purple);color:#fff;padding:14px 20px}
+.sec-head .no{background:#fff;color:var(--purple);width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:17px;flex:0 0 auto}
+.sec-head h2{font-size:20px;font-weight:800;line-height:1.15}
+.sec-body{background:#fff;padding:8px 20px 20px}
 
-/* block trong mỗi dạng */
-.blk{margin:20px 0 0}
-.blk h3{font-size:16.5px;font-weight:800;color:var(--ink);display:flex;align-items:center;gap:9px;padding-bottom:6px;border-bottom:2px solid #EFEFEF;margin-bottom:10px}
-.blk h3 .ic{width:24px;height:24px;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;flex:0 0 auto}
-.ic.b1{background:var(--blue-bg)} .ic.b2{background:var(--green-bg)} .ic.b3{background:var(--purple-bg)}
-.ic.b4{background:var(--orange-bg)} .ic.b5{background:var(--pink-bg)} .ic.b6{background:var(--red-bg)}
-
-.def{background:var(--pink-soft);border-left:4px solid var(--pink);border-radius:6px;padding:12px 16px;font-size:15px}
-.key{background:#FFF8E6;border:1px solid #F0DFA6;border-radius:8px;padding:11px 15px;font-size:14px;margin-top:10px}
+.def{background:var(--pink-soft);border-left:4px solid var(--pink);border-radius:6px;padding:12px 16px;font-size:15px;margin-top:14px}
+.key{background:#FFF8E6;border:1px solid #F0DFA6;border-radius:8px;padding:11px 15px;font-size:14px;margin-top:12px}
 .key b{color:var(--orange)}
+.note{background:var(--blue-bg);border:1px solid #BFD3EE;border-radius:8px;padding:11px 15px;font-size:14px;margin-top:12px}
+.note b{color:var(--blue)}
 
-ul{padding-left:20px;margin:4px 0}
-li{margin:5px 0}
+h3.blk{font-size:16px;font-weight:800;color:var(--ink);display:flex;align-items:center;gap:9px;padding-bottom:6px;border-bottom:2px solid #EFEFEF;margin:18px 0 10px}
+h3.blk .ic{width:24px;height:24px;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;flex:0 0 auto;background:var(--blue-bg)}
+h4.sub{font-size:14px;font-weight:800;color:var(--purple);margin:14px 0 4px;letter-spacing:.2px}
+
+ul{padding-left:20px;margin:4px 0}li{margin:5px 0}
 .tight li{margin:3px 0}
 .eg{color:var(--green);font-style:italic}
 .term{color:var(--blue);font-weight:600}
 .warn{color:var(--red);font-weight:700}
+.vn{color:var(--ink-soft);font-size:13px}
 
-/* structure 4 đoạn */
-.steps{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:8px}
-.step{border:1.5px solid #E8E8E8;border-radius:10px;padding:13px 16px;font-size:14px}
-.step .sh{font-size:13px;font-weight:800;letter-spacing:.4px;color:var(--purple);margin-bottom:5px}
-.step .sh b{background:var(--purple);color:#fff;border-radius:5px;padding:1px 7px;margin-right:6px;font-size:12px}
-.step .frame{display:block;background:#F6F4FB;border:1px dashed #C9BEE6;border-radius:6px;padding:6px 10px;margin-top:6px;font-family:'Consolas',monospace;font-size:12.5px;color:#4a3a7a}
+table{width:100%;border-collapse:collapse;font-size:13.5px;margin:8px 0}
+th,td{border:1px solid #E7E7E7;padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--pink-soft);font-size:12px;letter-spacing:.3px}
+td.lbl{font-weight:700;color:var(--ink-soft);white-space:nowrap;width:1%}
 
-/* table */
-table{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0}
-th,td{border:1px solid #E7E7E7;padding:7px 11px;text-align:left;vertical-align:top}
-th{background:var(--pink-soft);font-size:12.5px;letter-spacing:.3px}
-td:first-child{font-weight:600;color:var(--ink-soft);white-space:nowrap}
+/* 4-para */
+.para{border:1.5px solid #E8E8E8;border-radius:10px;padding:14px 16px;margin:12px 0;background:#FCFCFE}
+.para .ph{font-size:13.5px;font-weight:800;letter-spacing:.3px;color:var(--purple);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.para .ph b{background:var(--purple);color:#fff;border-radius:6px;padding:2px 9px;font-size:12px}
+.frame{display:block;background:#F6F4FB;border:1px dashed #C9BEE6;border-radius:6px;padding:8px 12px;margin:8px 0;font-family:'Consolas',monospace;font-size:12.5px;color:#4a3a7a;line-height:1.6}
+.led{margin:8px 0 4px;font-size:13.5px}
+.led b{color:var(--green)}
+.mini-h{font-size:12.5px;font-weight:800;color:var(--ink-soft);letter-spacing:.4px;margin:10px 0 3px;text-transform:uppercase}
 
-/* do/don't */
 .dd{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:6px}
 .dd .col{border-radius:10px;padding:12px 16px;font-size:14px}
 .dd .do{background:var(--green-bg);border:1.5px solid var(--green)}
 .dd .dont{background:var(--red-bg);border:1.5px solid var(--red)}
 .dd h4{font-size:14px;margin-bottom:6px}
-.dd .do h4{color:var(--green)} .dd .dont h4{color:var(--red)}
+.dd .do h4{color:var(--green)}.dd .dont h4{color:var(--red)}
 .dd ul{padding-left:18px}
-
-.rule{background:var(--red-bg);border:1.5px solid var(--red);border-radius:8px;padding:11px 15px;font-size:14px;margin-top:10px}
+.rule{background:var(--red-bg);border:1.5px solid var(--red);border-radius:8px;padding:11px 15px;font-size:14px;margin-top:12px}
 .rule b{color:var(--red)}
-.check{background:var(--green-bg);border:1.5px solid var(--green);border-radius:8px;padding:11px 15px;font-size:14px;margin-top:10px}
-.check b{color:var(--green)}
-.check table td:first-child{color:var(--green);font-weight:800;width:44px}
+
+.check{margin-top:6px}
+.check table td.crit{color:var(--green);font-weight:800;width:52px;background:var(--green-bg)}
+.band-tag{font-size:11px;font-weight:700;color:var(--purple);background:var(--purple-bg);border-radius:5px;padding:1px 7px;margin-left:4px}
 
 @media(max-width:640px){
-  .hero h1{font-size:28px}
-  .steps,.dd{grid-template-columns:1fr}
+  .filehero h1{font-size:26px}
+  .dd{grid-template-columns:1fr}
   table{display:block;overflow-x:auto}
 }
-
-.nav a.cur{background:var(--purple);color:#fff;border-color:var(--purple)}
-.filehero{text-align:center;padding:26px 0 4px}
-.filehero .kicker{letter-spacing:3px;font-size:12px;font-weight:700;color:var(--purple)}
-.filehero h1{font-size:30px;color:var(--ink);font-weight:800;line-height:1.15;margin-top:4px}
-.filehero .sub{font-size:14px;color:var(--ink-soft);margin-top:6px}
 </style></head><body>
 <header class="filehero wrap">
   <div class="kicker">IELTS WRITING TASK 1 · CẨM NANG THEO DẠNG</div>
   <h1>Map — Bản đồ</h1>
-  <div class="sub">2 bản đồ · mô tả thay đổi · bị động</div>
+  <div class="sub">2 bản đồ · mô tả thay đổi · bị động chủ đạo. Kiến thức neo <b>Band 8.0</b> cho cả 4 tiêu chí (TA · CC · LR · GRA), rút từ skill <b>ielts-writing-task1-sample</b>.</div>
+  <div class="band">🎯 Chuẩn phân tích: Band 8.0 · 4 tiêu chí</div>
 </header>
-<nav class="nav"><div class="wrap row"><a class="home" href="00-nen-chung.html">★ Nền chung</a><a class="" href="01-line-graph.html">1·Line</a><a class="" href="02-bar-chart.html">2·Bar</a><a class="" href="03-pie-chart.html">3·Pie</a><a class="" href="04-table.html">4·Table</a><a class="" href="05-mixed-charts.html">5·Mixed</a><a class="" href="06-process.html">6·Process</a><a class=" cur" href="07-map.html">7·Map</a></div></nav>
-<main class="wrap" style="padding-top:6px">
-<section class="type" style="margin-top:12px" id="map"><div class="type-head"><span class="no">7</span><div><h2>MAP — Bản đồ</h2><div class="en">2 maps · describe what changed · passive</div></div></div><div class="type-body"><div class="def"><b>Map</b> — 2 bản đồ/sơ đồ cùng khu vực ở 2 thời điểm (trước/sau, hoặc 2 năm). Nhiệm vụ: mô tả <b>những gì thay đổi</b>. Bản đồ khu vực &amp; sơ đồ địa điểm làm giống nhau.</div><div class="key"><b>🔑 Bị động là chủ đạo</b> (<i>a bus station was built</i>). Chọn thì theo mốc; dùng từ chỉ phương hướng/vị trí; gom địa điểm bằng umbrella term.</div><div class="blk"><h3><span class="ic b3">🏗️</span>Cấu trúc 4 đoạn</h3><div class="steps"><div class="step"><div class="sh"><b>1</b>INTRO</div><span class="frame">[Địa danh] prior to and following its (planned) development.</span></div><div class="step"><div class="sh"><b>2</b>OVERVIEW</div>Nhận định chung: nhiều/ít thay đổi, chỉ bằng umbrella term (facilities, transport, accommodation). KHÔNG tiểu tiết.</div><div class="step"><div class="sh"><b>3</b>BODY 1</div>Hiện trạng ban đầu — <i>In its current state / Prior to development…</i></div><div class="step"><div class="sh"><b>4</b>BODY 2</div>Sau thay đổi — <i>In the proposed changes / Following construction…</i></div></div></div><div class="blk"><h3><span class="ic b4">🔤</span>Từ vựng đặc thù map</h3><b>5 họ động từ thay đổi:</b><table><tr><th>Loại</th><th>Động từ</th></tr><tr><td>To hơn</td><td>enlarge · expand · extend</td></tr><tr><td>Phá dỡ</td><td>demolish · knock/pull down · cut down · remove</td></tr><tr><td>Xây mới</td><td>build · construct · erect · introduce</td></tr><tr><td>Thay thế</td><td>convert into · turn/make into · transform into · redevelop into</td></tr><tr><td>Đô thị hóa</td><td>urbanize · modernize · industrialize · pedestrianize</td></tr></table><b>Vị trí/phương hướng:</b> <span class="term">to the north/south of [mốc] · in the northern part of the map · next to · opposite · between · adjacent to</span>. La bàn hợp khu vực rộng; đề không in la bàn thì tự quy ước.<br><b>Signpost:</b> In its current state ‖ In the proposed changes / Following construction ‖ In terms of / Regarding [umbrella].</div><div class="dd"><div class="col do"><h4>✔ NÊN</h4><ul class=""><li>Bị động cho thay đổi (was demolished)</li><li>Gom địa điểm bằng umbrella term</li><li>Nêu cả thứ GIỮ NGUYÊN (remained unchanged)</li></ul></div><div class="col dont"><h4>✘ TRÁNH</h4><ul class=""><li><b>Một-thì-xuyên-suốt</b> → tả tĩnh, trừ TA</li><li>Nêu vị trí chính xác cho MỌI địa điểm (rối)</li><li>Kể tiểu tiết trong overview</li></ul></div></div><div class="rule"><b>⚠️ LUẬT CỨNG — thì theo mốc:</b> 2 mốc quá khứ → past (+ past perfect <i>had been built</i>). "now + plan" → present + future / <i>is expected to / is set to</i>. Dùng một thì cho cả hai bản đồ = trừ TA.</div><div class="check"><b>✅ CHECKLIST 4 TIÊU CHÍ</b><table><tr><th></th><th>Tự kiểm tra trước khi nộp</th></tr><tr><td>TA</td><td>Overview nêu mức độ thay đổi bằng umbrella, không tiểu tiết? Nêu cả thứ không đổi?</td></tr><tr><td>CC</td><td>Signpost trước/sau rõ? Chia mỗi bản đồ một đoạn?</td></tr><tr><td>LR</td><td>Dùng 5 họ động từ thay đổi? Từ chỉ hướng/vị trí chính xác?</td></tr><tr><td>GRA</td><td>Thì theo mốc (không một-thì-xuyên-suốt)? Bị động chủ đạo?</td></tr></table></div></div></section>
-</main>
-</body>
-</html>
+<nav class="nav"><div class="wrap row"><a class="home" href="00-nen-chung.html">★ Nền chung</a><a class="" href="01-line-graph.html">1·Line</a><a class="" href="02-bar-chart.html">2·Bar</a><a class="" href="03-pie-chart.html">3·Pie</a><a class="" href="04-table.html">4·Table</a><a class="" href="05-mixed-charts.html">5·Mixed</a><a class="" href="06-process.html">6·Process</a><a class="cur" href="07-map.html">7·Map</a></div></nav>
+<main class="wrap">
+<section class="sec" id="s1"><div class="sec-head"><span class="no">1</span><h2>Dạng này là gì / Nhận diện</h2></div><div class="sec-body"><div class="def"><b>Map</b> — 2 bản đồ/sơ đồ cùng khu vực ở 2 thời điểm (trước/sau, hoặc 2 năm). Nhiệm vụ: mô tả <b>những gì thay đổi</b>. Bản đồ khu vực &amp; sơ đồ địa điểm làm giống nhau.</div><div class="key"><b>🔑 Key point:</b> <b>bị động là chủ đạo</b> (<i>a bus station was built</i>). Chọn thì theo mốc; dùng từ chỉ phương hướng/vị trí; gom địa điểm bằng umbrella term. KHÔNG nêu vị trí chính xác cho MỌI địa điểm — chỉ khi giúp làm nổi thay đổi.</div><h3 class="blk"><span class="ic">🔎</span>Bước nhận diện</h3><table><tr><th>Cần xác định</th><th>Ví dụ</th></tr><tr><td class="lbl">Thời điểm</td><td>now vs planned · 2007 vs 2010</td></tr><tr><td class="lbl">Key (chú thích)</td><td>shop, school, park…</td></tr><tr><td class="lbl">Scale / Compass</td><td>có tỉ lệ? có la bàn?</td></tr><tr><td class="lbl">Loại thay đổi</td><td>xây mới · phá dỡ · mở rộng · thay thế · giữ nguyên</td></tr></table><div class="note"><b>Không có la bàn?</b> Tự quy ước hướng rồi dùng bình thường. La bàn hợp khu vực rộng, không hợp địa điểm nhỏ trong tòa nhà.</div></div></section><section class="sec" id="s2"><div class="sec-head"><span class="no">2</span><h2>Chọn thì &amp; Nguyên tắc gốc</h2></div><div class="sec-body"><table><tr><th>Tình huống mốc</th><th>Thì</th><th>Ví dụ</th></tr><tr><td class="lbl">2 mốc quá khứ (2007/2010)</td><td>Past + past perfect</td><td>a station had been built by 2010</td></tr><tr><td class="lbl">now + kế hoạch tương lai</td><td>Present + future / is expected to</td><td>a station is expected to be constructed</td></tr><tr><td class="lbl">Bản đồ sau (hoàn tất trước mốc)</td><td>Past perfect passive</td><td>had been demolished</td></tr></table><div class="rule"><b>⚠️ LUẬT CỨNG — thì theo mốc:</b> dùng MỘT thì cho cả hai bản đồ = tả tĩnh thay vì chỉ ra thay đổi → trừ TA. Phải đổi thì đúng theo mốc thời gian của hai bản đồ.</div><div class="note"><b>Bị động chủ đạo:</b> <i>a restaurant was built</i> (không cần nêu ai xây). Xen chủ động để linh hoạt.</div></div></section><section class="sec" id="s3"><div class="sec-head"><span class="no">3</span><h2>Cấu trúc 4 đoạn (kèm câu dẫn · từ vựng · ngữ pháp)</h2></div><div class="sec-body"><h3 class="blk"><span class="ic">🧭</span>Nguyên tắc chia đoạn của map</h3><ul class="tight"><li><b>An toàn nhất:</b> mỗi bản đồ một đoạn (theo thời gian) — Body 1 = hiện trạng · Body 2 = sau thay đổi.</li><li>Chia theo loại thay đổi hoặc theo địa lý cũng hợp lệ nếu logic; band thấp nên tránh chia địa lý (dễ liệt kê).</li><li>Có thể mở Body 1 bằng nhóm <i>unchanged features</i> (mẫu Cambridge).</li></ul><div class="para"><div class="ph"><b>Đoạn 1</b> INTRODUCTION — Paraphrase đề</div><span class="frame">The maps show + [địa danh] + prior to and following its (planned) development.</span><div class="mini-h">Câu dẫn học thuật</div><ul class="tight"><li><span class="eg">The maps show the town centre of Islip prior to and following its planned development.</span></li><li><span class="eg">The two maps illustrate the changes to a city hospital’s road access between 2007 and 2010.</span></li></ul><div class="led"><b>LR focus:</b> <span class="term">prior to and following · before and after · the changes to</span>.</div></div><div class="para"><div class="ph"><b>Đoạn 2</b> OVERVIEW — mức độ thay đổi (umbrella) · KHÔNG tiểu tiết</div><span class="frame">Overall, significant changes are expected, with the addition of [umbrella]; meanwhile, [umbrella] is set to undergo upgrades.</span><div class="mini-h">Câu dẫn học thuật</div><ul class="tight"><li><span class="eg">Overall, significant changes are expected in the layout of this town centre, with the addition of facilities and accommodation.</span></li></ul><div class="led"><b>CC focus:</b> Overview CHỈ dùng umbrella term (facilities · accommodation · transport · amenities), KHÔNG tiểu tiết từng địa điểm.</div></div><div class="para"><div class="ph"><b>Đoạn 3</b> BODY 1 — Hiện trạng ban đầu</div><div class="mini-h">Câu dẫn</div><ul class="tight"><li><span class="eg">In its current state, … · Prior to development, …</span></li></ul><div class="mini-h">Khung câu</div><span class="frame">The [địa điểm], which had [đặc điểm], was located to the [hướng] of [mốc].</span></div><div class="para"><div class="ph"><b>Đoạn 4</b> BODY 2 — Sau thay đổi</div><div class="mini-h">Câu dẫn</div><ul class="tight"><li><span class="eg">In the proposed changes, … · Following construction, … · As part of the development programme, …</span></li><li><span class="eg">Regarding facilities, … · In terms of accommodation, …</span></li></ul></div><h3 class="blk"><span class="ic">🔤</span>Từ vựng &amp; Collocation theo dạng (LR Band 8)</h3><h4 class="sub">5 họ động từ thay đổi</h4><table><tr><th>Loại</th><th>Động từ</th></tr><tr><td class="lbl">To hơn</td><td>enlarge · expand · extend</td></tr><tr><td class="lbl">Phá dỡ</td><td>demolish · knock/pull down · cut down · remove</td></tr><tr><td class="lbl">Xây mới</td><td>build · construct · erect · introduce</td></tr><tr><td class="lbl">Thay thế</td><td>convert into · turn/make into · transform into · redevelop into</td></tr><tr><td class="lbl">Đô thị hóa</td><td>urbanize · modernize · industrialize · pedestrianize</td></tr></table><h4 class="sub">Vị trí / phương hướng</h4><ul class="tight"><li><span class="term">to the north/south of [mốc] · in the northern part of the map · next to · opposite · between · adjacent to · behind · in front of</span></li></ul><h4 class="sub">Umbrella terms (nháp + overview)</h4><ul class="tight"><li><span class="term">facilities · accommodation · transport · access · natural features · amenities · indoor/outdoor areas · building types</span></li></ul><div class="key">⭐ <b>Mạo từ:</b> lần đầu <i>a/an</i>, nhắc lại <i>the</i> — <i>There is <b>a</b> school … <b>The</b> school remained unchanged.</i></div><h3 class="blk"><span class="ic">💬</span>Cụm câu mẫu (Useful phrases)</h3><ul class="tight"><li><span class="eg">A bus station was built to the west of the main road, replacing the old shops.</span></li><li><span class="eg">The park was reduced in size, while a car park was constructed next to it.</span></li><li><span class="eg">The school and housing to the south remained unchanged.</span></li><li><span class="eg">Regarding transport, a dual carriageway is expected to be added around the town.</span></li></ul><h3 class="blk"><span class="ic">📐</span>Grammar focus cho map (GRA Band 8)</h3><h4 class="sub">① Bị động theo mốc thời gian</h4><span class="frame">Past: a station was built · had been demolished.
+Tương lai: a station will be built · is expected to be constructed.</span><h4 class="sub">② Mệnh đề rút gọn nêu kết quả</h4><span class="frame">A bus station was built, replacing the six original bus stops.</span><h4 class="sub">③ Nêu thứ GIỮ NGUYÊN</h4><ul class="tight"><li><i>remained unchanged · was retained · stayed the same</i> — vẫn phải nhắc để bài đầy đủ.</li></ul></div></section><section class="sec" id="s4"><div class="sec-head"><span class="no">4</span><h2>LUẬT CỨNG — Do's &amp; Don'ts</h2></div><div class="sec-body"><div class="dd"><div class="col do"><h4>✔ NÊN</h4><ul class="tight"><li>Bị động cho thay đổi (was demolished / will be built)</li><li>Gom địa điểm bằng umbrella term</li><li>Nêu cả thứ GIỮ NGUYÊN (remained unchanged)</li><li>Chọn thì đúng theo mốc</li></ul></div><div class="col dont"><h4>✘ TRÁNH</h4><ul class="tight"><li><span class="warn">Một-thì-xuyên-suốt</span> → tả tĩnh, trừ TA</li><li>Nêu vị trí chính xác cho MỌI địa điểm (rối)</li><li>Kể tiểu tiết trong overview</li><li>Bỏ sót thay đổi lớn</li></ul></div></div><div class="rule"><b>⚠️ LUẬT CỨNG:</b> thì theo mốc: 2 mốc quá khứ → past (+ past perfect) · now+plan → present + future/is expected to. Dùng một thì cho cả hai bản đồ = trừ TA. Bị động là chủ đạo.</div></div></section><section class="sec" id="s5"><div class="sec-head"><span class="no">5</span><h2>Checklist 4 tiêu chí (Band 8.0)</h2></div><div class="sec-body"><div class="check"><table><tr><th>Tiêu chí</th><th>Hành vi Band 8.0 cần đạt</th></tr><tr><td class="crit">TA</td><td>Overview nêu mức độ thay đổi bằng umbrella, KHÔNG tiểu tiết · nêu cả thứ không đổi · bám thay đổi chính <span class="band-tag">B8</span></td></tr><tr><td class="crit">CC</td><td>Signpost trước/sau rõ (In its current state / Following construction) · chia mỗi bản đồ một đoạn <span class="band-tag">B8</span></td></tr><tr><td class="crit">LR</td><td>Dùng 5 họ động từ thay đổi · từ chỉ hướng/vị trí chính xác · umbrella term · mạo từ a→the <span class="band-tag">B8</span></td></tr><tr><td class="crit">GRA</td><td>Thì theo mốc (không một-thì-xuyên-suốt) · bị động chủ đạo · mệnh đề rút gọn nêu kết quả <span class="band-tag">B8</span></td></tr></table></div><div class="key">🎯 <b>Tự soát nhanh:</b> Có dùng một thì cho cả hai bản đồ không (sai)? · Overview có tiểu tiết không? · Đã nêu thứ giữ nguyên? · Bị động đã đủ chưa?</div></div></section>
+</main></body></html>
