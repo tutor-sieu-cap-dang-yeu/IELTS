@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="vi"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mixed Charts — Biểu đồ kết hợp — IELTS Writing Task 1</title>
+<title>Mixed Charts — Biểu đồ kết hợp — IELTS Writing Task 1 (Band 8.0)</title>
 <style>
 :root{
   --paper:#FDFDFB; --paper-line:#EEF1F5; --ink:#252830; --ink-soft:#666C78;
@@ -14,93 +14,85 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Roboto','Segoe UI',system-ui,sans-serif;color:var(--ink);font-size:16px;line-height:1.7;background:var(--paper);padding-bottom:80px}
-.wrap{max-width:920px;margin:0 auto;padding:0 18px}
-.hero{text-align:center;padding:34px 0 8px}
-.hero .kicker{letter-spacing:3px;font-size:13px;font-weight:700;color:var(--purple)}
-.hero h1{font-size:38px;color:var(--ink);font-weight:800;line-height:1.1;margin-top:4px}
-.hero .sub{font-size:15px;color:var(--ink-soft);margin-top:10px;max-width:640px;margin-left:auto;margin-right:auto}
-.hero .meta{margin-top:10px;font-size:12.5px;color:var(--ink-soft)}
+.wrap{max-width:940px;margin:0 auto;padding:0 18px}
+.filehero{text-align:center;padding:30px 0 6px}
+.filehero .kicker{letter-spacing:3px;font-size:12px;font-weight:700;color:var(--purple)}
+.filehero h1{font-size:34px;color:var(--ink);font-weight:800;line-height:1.12;margin-top:5px}
+.filehero .sub{font-size:14.5px;color:var(--ink-soft);margin-top:8px;max-width:660px;margin-left:auto;margin-right:auto}
+.filehero .band{display:inline-block;margin-top:10px;background:var(--purple-bg);color:var(--purple);font-weight:700;font-size:13px;border-radius:999px;padding:4px 16px}
 
-.nav{position:sticky;top:0;z-index:30;background:rgba(253,253,251,.97);backdrop-filter:blur(5px);padding:10px 0;border-bottom:2px solid var(--pink-bg);margin-bottom:8px}
+.nav{position:sticky;top:0;z-index:30;background:rgba(253,253,251,.97);backdrop-filter:blur(5px);padding:9px 0;border-bottom:2px solid var(--pink-bg);margin-bottom:10px}
 .nav .row{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
-.nav a{text-decoration:none;background:#fff;border:1.5px solid #E4C8DA;border-radius:999px;padding:5px 13px;font-size:12.5px;font-weight:700;color:var(--pink)}
+.nav a{text-decoration:none;background:#fff;border:1.5px solid #E4C8DA;border-radius:999px;padding:5px 12px;font-size:12px;font-weight:700;color:var(--pink)}
 .nav a:hover{background:var(--pink-soft)}
 .nav a.home{border-color:var(--purple);color:var(--purple)}
+.nav a.cur{background:var(--purple);color:#fff;border-color:var(--purple)}
 
-/* dạng section */
-.type{scroll-margin-top:64px;margin:40px 0 0}
-.type-head{display:flex;align-items:center;gap:14px;background:var(--purple);color:#fff;border-radius:var(--radius) var(--radius) 0 0;padding:16px 22px}
-.type-head .no{background:#fff;color:var(--purple);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:19px;flex:0 0 auto}
-.type-head h2{font-size:24px;font-weight:800;line-height:1.15}
-.type-head .en{font-size:13px;font-weight:600;opacity:.85;margin-top:2px}
-.type-body{border:2px solid var(--purple-bg);border-top:none;border-radius:0 0 var(--radius) var(--radius);padding:6px 22px 22px;background:#fff}
+/* section (mục 1..5) */
+.sec{scroll-margin-top:60px;margin:26px 0 0;border:2px solid var(--purple-bg);border-radius:var(--radius);overflow:hidden}
+.sec-head{display:flex;align-items:center;gap:13px;background:var(--purple);color:#fff;padding:14px 20px}
+.sec-head .no{background:#fff;color:var(--purple);width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:17px;flex:0 0 auto}
+.sec-head h2{font-size:20px;font-weight:800;line-height:1.15}
+.sec-body{background:#fff;padding:8px 20px 20px}
 
-/* block trong mỗi dạng */
-.blk{margin:20px 0 0}
-.blk h3{font-size:16.5px;font-weight:800;color:var(--ink);display:flex;align-items:center;gap:9px;padding-bottom:6px;border-bottom:2px solid #EFEFEF;margin-bottom:10px}
-.blk h3 .ic{width:24px;height:24px;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;flex:0 0 auto}
-.ic.b1{background:var(--blue-bg)} .ic.b2{background:var(--green-bg)} .ic.b3{background:var(--purple-bg)}
-.ic.b4{background:var(--orange-bg)} .ic.b5{background:var(--pink-bg)} .ic.b6{background:var(--red-bg)}
-
-.def{background:var(--pink-soft);border-left:4px solid var(--pink);border-radius:6px;padding:12px 16px;font-size:15px}
-.key{background:#FFF8E6;border:1px solid #F0DFA6;border-radius:8px;padding:11px 15px;font-size:14px;margin-top:10px}
+.def{background:var(--pink-soft);border-left:4px solid var(--pink);border-radius:6px;padding:12px 16px;font-size:15px;margin-top:14px}
+.key{background:#FFF8E6;border:1px solid #F0DFA6;border-radius:8px;padding:11px 15px;font-size:14px;margin-top:12px}
 .key b{color:var(--orange)}
+.note{background:var(--blue-bg);border:1px solid #BFD3EE;border-radius:8px;padding:11px 15px;font-size:14px;margin-top:12px}
+.note b{color:var(--blue)}
 
-ul{padding-left:20px;margin:4px 0}
-li{margin:5px 0}
+h3.blk{font-size:16px;font-weight:800;color:var(--ink);display:flex;align-items:center;gap:9px;padding-bottom:6px;border-bottom:2px solid #EFEFEF;margin:18px 0 10px}
+h3.blk .ic{width:24px;height:24px;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;flex:0 0 auto;background:var(--blue-bg)}
+h4.sub{font-size:14px;font-weight:800;color:var(--purple);margin:14px 0 4px;letter-spacing:.2px}
+
+ul{padding-left:20px;margin:4px 0}li{margin:5px 0}
 .tight li{margin:3px 0}
 .eg{color:var(--green);font-style:italic}
 .term{color:var(--blue);font-weight:600}
 .warn{color:var(--red);font-weight:700}
+.vn{color:var(--ink-soft);font-size:13px}
 
-/* structure 4 đoạn */
-.steps{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:8px}
-.step{border:1.5px solid #E8E8E8;border-radius:10px;padding:13px 16px;font-size:14px}
-.step .sh{font-size:13px;font-weight:800;letter-spacing:.4px;color:var(--purple);margin-bottom:5px}
-.step .sh b{background:var(--purple);color:#fff;border-radius:5px;padding:1px 7px;margin-right:6px;font-size:12px}
-.step .frame{display:block;background:#F6F4FB;border:1px dashed #C9BEE6;border-radius:6px;padding:6px 10px;margin-top:6px;font-family:'Consolas',monospace;font-size:12.5px;color:#4a3a7a}
+table{width:100%;border-collapse:collapse;font-size:13.5px;margin:8px 0}
+th,td{border:1px solid #E7E7E7;padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--pink-soft);font-size:12px;letter-spacing:.3px}
+td.lbl{font-weight:700;color:var(--ink-soft);white-space:nowrap;width:1%}
 
-/* table */
-table{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0}
-th,td{border:1px solid #E7E7E7;padding:7px 11px;text-align:left;vertical-align:top}
-th{background:var(--pink-soft);font-size:12.5px;letter-spacing:.3px}
-td:first-child{font-weight:600;color:var(--ink-soft);white-space:nowrap}
+/* 4-para */
+.para{border:1.5px solid #E8E8E8;border-radius:10px;padding:14px 16px;margin:12px 0;background:#FCFCFE}
+.para .ph{font-size:13.5px;font-weight:800;letter-spacing:.3px;color:var(--purple);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.para .ph b{background:var(--purple);color:#fff;border-radius:6px;padding:2px 9px;font-size:12px}
+.frame{display:block;background:#F6F4FB;border:1px dashed #C9BEE6;border-radius:6px;padding:8px 12px;margin:8px 0;font-family:'Consolas',monospace;font-size:12.5px;color:#4a3a7a;line-height:1.6}
+.led{margin:8px 0 4px;font-size:13.5px}
+.led b{color:var(--green)}
+.mini-h{font-size:12.5px;font-weight:800;color:var(--ink-soft);letter-spacing:.4px;margin:10px 0 3px;text-transform:uppercase}
 
-/* do/don't */
 .dd{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:6px}
 .dd .col{border-radius:10px;padding:12px 16px;font-size:14px}
 .dd .do{background:var(--green-bg);border:1.5px solid var(--green)}
 .dd .dont{background:var(--red-bg);border:1.5px solid var(--red)}
 .dd h4{font-size:14px;margin-bottom:6px}
-.dd .do h4{color:var(--green)} .dd .dont h4{color:var(--red)}
+.dd .do h4{color:var(--green)}.dd .dont h4{color:var(--red)}
 .dd ul{padding-left:18px}
-
-.rule{background:var(--red-bg);border:1.5px solid var(--red);border-radius:8px;padding:11px 15px;font-size:14px;margin-top:10px}
+.rule{background:var(--red-bg);border:1.5px solid var(--red);border-radius:8px;padding:11px 15px;font-size:14px;margin-top:12px}
 .rule b{color:var(--red)}
-.check{background:var(--green-bg);border:1.5px solid var(--green);border-radius:8px;padding:11px 15px;font-size:14px;margin-top:10px}
-.check b{color:var(--green)}
-.check table td:first-child{color:var(--green);font-weight:800;width:44px}
+
+.check{margin-top:6px}
+.check table td.crit{color:var(--green);font-weight:800;width:52px;background:var(--green-bg)}
+.band-tag{font-size:11px;font-weight:700;color:var(--purple);background:var(--purple-bg);border-radius:5px;padding:1px 7px;margin-left:4px}
 
 @media(max-width:640px){
-  .hero h1{font-size:28px}
-  .steps,.dd{grid-template-columns:1fr}
+  .filehero h1{font-size:26px}
+  .dd{grid-template-columns:1fr}
   table{display:block;overflow-x:auto}
 }
-
-.nav a.cur{background:var(--purple);color:#fff;border-color:var(--purple)}
-.filehero{text-align:center;padding:26px 0 4px}
-.filehero .kicker{letter-spacing:3px;font-size:12px;font-weight:700;color:var(--purple)}
-.filehero h1{font-size:30px;color:var(--ink);font-weight:800;line-height:1.15;margin-top:4px}
-.filehero .sub{font-size:14px;color:var(--ink-soft);margin-top:6px}
 </style></head><body>
 <header class="filehero wrap">
   <div class="kicker">IELTS WRITING TASK 1 · CẨM NANG THEO DẠNG</div>
   <h1>Mixed Charts — Biểu đồ kết hợp</h1>
-  <div class="sub">2+ biểu đồ · lai trend + so sánh</div>
+  <div class="sub">2+ biểu đồ · lai xu hướng + so sánh. Kiến thức neo <b>Band 8.0</b> cho cả 4 tiêu chí (TA · CC · LR · GRA), rút từ skill <b>ielts-writing-task1-sample</b>.</div>
+  <div class="band">🎯 Chuẩn phân tích: Band 8.0 · 4 tiêu chí</div>
 </header>
-<nav class="nav"><div class="wrap row"><a class="home" href="00-nen-chung.html">★ Nền chung</a><a class="" href="01-line-graph.html">1·Line</a><a class="" href="02-bar-chart.html">2·Bar</a><a class="" href="03-pie-chart.html">3·Pie</a><a class="" href="04-table.html">4·Table</a><a class=" cur" href="05-mixed-charts.html">5·Mixed</a><a class="" href="06-process.html">6·Process</a><a class="" href="07-map.html">7·Map</a></div></nav>
-<main class="wrap" style="padding-top:6px">
-<section class="type" style="margin-top:12px" id="mixed"><div class="type-head"><span class="no">5</span><div><h2>MIXED CHARTS — Biểu đồ kết hợp</h2><div class="en">2+ charts · hybrid of trend + comparison</div></div></div><div class="type-body"><div class="def"><b>Mixed charts</b> — ≥2 biểu đồ (cùng hoặc khác loại) trong một đề, cung cấp thông tin khác nhau về một chủ đề. Lượng thông tin lớn → nhấn mạnh <b>chọn lọc + liên kết (CC)</b>.</div><div class="key"><b>🔑 Bản chất lai:</b> biểu đồ nào có trục thời gian → dùng kho xu hướng; biểu đồ static → dùng kho so sánh (kể cả luật cấm trend). Xử lý mỗi biểu đồ bằng đúng bộ quy tắc của nó.</div><div class="blk"><h3><span class="ic b3">🏗️</span>Cấu trúc 4 đoạn</h3><div class="steps"><div class="step"><div class="sh"><b>1</b>INTRO</div>MỘT câu gộp, nêu rõ vai trò từng biểu đồ.<span class="frame">The table shows …; while the pie charts show … (over the same period).</span></div><div class="step"><div class="sh"><b>2</b>OVERVIEW</div>Phải PHỦ CẢ HAI biểu đồ — bỏ sót một là lỗi TA nặng nhất.</div><div class="step"><div class="sh"><b>3</b>BODY 1</div>Biểu đồ 1 — <i>Starting with …</i></div><div class="step"><div class="sh"><b>4</b>BODY 2</div>Biểu đồ 2 — <i>Turning to …</i></div></div></div><div class="blk"><h3><span class="ic b4">🔤</span>Từ vựng &amp; signpost</h3><b>Signpost bắt buộc:</b> <span class="term">Starting with [chart 1] … · Turning to [chart 2] … · Regarding … · In terms of …</span><br><b>Từ đắt:</b> <span class="term">albeit</span> (…, albeit the highest, decreased) · <span class="term">respectively</span> · <span class="term">twice as high as / twofold</span>.<br>Body mặc định mỗi biểu đồ một đoạn; cách chia khác vẫn được nếu có mạch phát triển rõ.</div><div class="dd"><div class="col do"><h4>✔ NÊN</h4><ul class=""><li>Overview phủ đủ 2 biểu đồ</li><li>Signpost rõ khi chuyển biểu đồ</li><li>Dùng đúng bộ quy tắc cho từng loại con</li></ul></div><div class="col dont"><h4>✘ TRÁNH</h4><ul class=""><li><b>Bỏ sót một biểu đồ trong overview</b> (lỗi TA nặng nhất)</li><li>Trộn hai biểu đồ lộn xộn không tín hiệu</li><li>Cố tả hết mọi số của cả hai</li></ul></div></div><div class="check"><b>✅ CHECKLIST 4 TIÊU CHÍ</b><table><tr><th></th><th>Tự kiểm tra trước khi nộp</th></tr><tr><td>TA</td><td>Overview PHỦ CẢ HAI biểu đồ, không số? Chọn lọc số đắt?</td></tr><tr><td>CC</td><td>Signpost Starting with / Turning to rõ? Mỗi biểu đồ một đoạn?</td></tr><tr><td>LR</td><td>Dùng đúng kho từ (xu hướng cho chart thời gian, so sánh cho static)?</td></tr><tr><td>GRA</td><td>Thì khớp từng biểu đồ con? Giới từ số liệu đúng?</td></tr></table></div></div></section>
-</main>
-</body>
-</html>
+<nav class="nav"><div class="wrap row"><a class="home" href="00-nen-chung.html">★ Nền chung</a><a class="" href="01-line-graph.html">1·Line</a><a class="" href="02-bar-chart.html">2·Bar</a><a class="" href="03-pie-chart.html">3·Pie</a><a class="" href="04-table.html">4·Table</a><a class="cur" href="05-mixed-charts.html">5·Mixed</a><a class="" href="06-process.html">6·Process</a><a class="" href="07-map.html">7·Map</a></div></nav>
+<main class="wrap">
+<section class="sec" id="s1"><div class="sec-head"><span class="no">1</span><h2>Dạng này là gì / Nhận diện</h2></div><div class="sec-body"><div class="def"><b>Mixed / multiple charts</b> — ≥2 biểu đồ (cùng hoặc khác loại) trong một đề, cung cấp thông tin khác nhau về một chủ đề. Lượng thông tin lớn → nhấn mạnh <b>chọn lọc + liên kết (CC)</b>.</div><div class="key"><b>🔑 Key point:</b> đây là dạng LAI — biểu đồ nào có trục thời gian dùng kho <b>xu hướng</b>; biểu đồ static dùng kho <b>so sánh</b> (kể cả luật cấm trend). Xử lý mỗi biểu đồ bằng đúng bộ quy tắc của loại đó.</div><h3 class="blk"><span class="ic">🔎</span>Bước nhận diện</h3><table><tr><th>Cần xác định</th><th>Ví dụ</th></tr><tr><td class="lbl">Số &amp; loại biểu đồ</td><td>table + pie · bar + line · 2 pie…</td></tr><tr><td class="lbl">Vai trò từng biểu đồ</td><td>table: nguồn tiền · pie: cách phân bổ</td></tr><tr><td class="lbl">Biểu đồ nào động / tĩnh</td><td>line = động · pie 1 năm = tĩnh</td></tr><tr><td class="lbl">Chủ đề chung</td><td>ngân sách · dân số…</td></tr></table><div class="note"><b>Ghép thường gặp:</b> table+line · table+bar · pie+bar · pie+line · line+bar · 2–3 pie cùng loại.</div></div></section><section class="sec" id="s2"><div class="sec-head"><span class="no">2</span><h2>Chọn thì &amp; Nguyên tắc gốc</h2></div><div class="sec-body"><p class="vn">Mỗi biểu đồ con giữ nguyên bộ quy tắc thì của loại nó:</p><table><tr><th>Biểu đồ con</th><th>Thì / ngôn ngữ</th></tr><tr><td class="lbl">Có trục thời gian (line/bar/pie nhiều mốc)</td><td>tăng/giảm + thì theo mốc</td></tr><tr><td class="lbl">Static (pie/bar/table một thời điểm)</td><td>so sánh, CẤM trend language</td></tr><tr><td class="lbl">Cả hai cùng khung năm</td><td>giữ thì nhất quán giữa hai biểu đồ</td></tr></table><div class="rule"><b>⚠️ LUẬT CỨNG số 1 của mixed:</b> Overview phải PHỦ CẢ HAI biểu đồ. Bỏ sót một biểu đồ trong overview là lỗi TA <b>nặng nhất</b> của dạng này.</div></div></section><section class="sec" id="s3"><div class="sec-head"><span class="no">3</span><h2>Cấu trúc 4 đoạn (kèm câu dẫn · từ vựng · ngữ pháp)</h2></div><div class="sec-body"><h3 class="blk"><span class="ic">🧭</span>Nguyên tắc chia đoạn của mixed</h3><ul class="tight"><li><b>Mặc định:</b> mỗi biểu đồ một đoạn Body — <i>Starting with [chart 1] … Turning to [chart 2] …</i></li><li>Cách chia khác vẫn được nếu có mạch phát triển (clear progression) rõ.</li></ul><div class="para"><div class="ph"><b>Đoạn 1</b> INTRODUCTION — Paraphrase đề (MỘT câu gộp)</div><p class="vn">Một câu gộp, nêu rõ vai trò từng biểu đồ.</p><span class="frame">The [chart 1] shows + [nội dung 1]; while the [chart 2] shows + [nội dung 2] + (over the same period).</span><div class="mini-h">Câu dẫn học thuật</div><ul class="tight"><li><span class="eg">The table illustrates how a police force was financed between 2017 and 2018, while the pie charts depict the distribution of those funds.</span></li></ul><div class="led"><b>LR focus:</b> dùng 2 động từ khác nhau cho 2 biểu đồ (<i>shows … while … depicts …</i>) để né lặp.</div></div><div class="para"><div class="ph"><b>Đoạn 2</b> OVERVIEW — PHỦ CẢ HAI biểu đồ · KHÔNG số</div><span class="frame">Overall, [đặc điểm nổi bật của chart 1]; meanwhile, [đặc điểm nổi bật của chart 2].</span><div class="mini-h">Câu dẫn học thuật</div><ul class="tight"><li><span class="eg">Overall, the police received the most funding from the government in both years; meanwhile, staff wages, albeit the highest, decreased.</span></li></ul><div class="led"><b>CC focus:</b> <span class="term">meanwhile · while · in addition</span> nối đặc điểm của hai biểu đồ trong một overview.</div></div><div class="para"><div class="ph"><b>Đoạn 3</b> BODY 1 — Biểu đồ 1</div><div class="mini-h">Câu dẫn bắt buộc</div><ul class="tight"><li><span class="eg">Starting with [chart 1], …</span></li></ul><div class="led"><b>Lưu ý:</b> dùng đúng kho từ của loại chart 1 (động → tăng/giảm; tĩnh → so sánh).</div></div><div class="para"><div class="ph"><b>Đoạn 4</b> BODY 2 — Biểu đồ 2</div><div class="mini-h">Câu dẫn bắt buộc</div><ul class="tight"><li><span class="eg">Turning to [chart 2], …</span></li></ul></div><h3 class="blk"><span class="ic">🔤</span>Từ vựng &amp; Collocation theo dạng (LR Band 8)</h3><h4 class="sub">Signpost bắt buộc</h4><ul class="tight"><li><span class="term">Starting with [chart 1] · Turning to [chart 2] · Regarding … · In terms of …</span></li></ul><h4 class="sub">Từ đắt từ bài mẫu</h4><ul class="tight"><li><span class="term">albeit</span> (…, albeit the highest, decreased) · <span class="term">respectively</span> · <span class="term">twice as high as · twofold</span></li></ul><div class="key">⭐ Kho ngôn ngữ = kho của HAI loại con cộng lại. Xem file Line/Bar/Pie/Table tương ứng.</div><h3 class="blk"><span class="ic">💬</span>Cụm câu mẫu (Useful phrases)</h3><ul class="tight"><li><span class="eg">Starting with [chart 1], [đặc điểm + số liệu].</span></li><li><span class="eg">Turning to [chart 2], [đặc điểm + số liệu].</span></li><li><span class="eg">[X], albeit the highest in both years, decreased over the period.</span></li><li><span class="eg">The two figures were [a] and [b] respectively.</span></li></ul><h3 class="blk"><span class="ic">📐</span>Grammar focus cho mixed (GRA Band 8)</h3><h4 class="sub">① Nối 2 biểu đồ bằng dấu chấm phẩy + meanwhile/while</h4><span class="frame">The table shows …; meanwhile, the pie charts show …</span><h4 class="sub">② Mỗi biểu đồ dùng đúng cấu trúc của loại nó</h4><ul class="tight"><li>chart động → participle clause + giới từ số liệu · chart tĩnh → so sánh + account for</li></ul></div></section><section class="sec" id="s4"><div class="sec-head"><span class="no">4</span><h2>LUẬT CỨNG — Do's &amp; Don'ts</h2></div><div class="sec-body"><div class="dd"><div class="col do"><h4>✔ NÊN</h4><ul class="tight"><li>Overview PHỦ CẢ HAI biểu đồ</li><li>Signpost rõ khi chuyển biểu đồ (Starting with / Turning to)</li><li>Dùng đúng bộ quy tắc cho từng loại con</li><li>Chọn lọc mạnh — không tả hết cả hai</li></ul></div><div class="col dont"><h4>✘ TRÁNH</h4><ul class="tight"><li><span class="warn">Bỏ sót một biểu đồ trong overview</span> (lỗi TA nặng nhất)</li><li>Trộn hai biểu đồ lộn xộn không tín hiệu</li><li>Cố tả hết mọi số của cả hai</li><li>Dùng trend language cho biểu đồ tĩnh</li></ul></div></div><div class="rule"><b>⚠️ LUẬT CỨNG:</b> Overview <b>bắt buộc phủ cả hai biểu đồ</b>. Mỗi biểu đồ con xử lý bằng đúng bộ quy tắc của loại nó (động vs tĩnh). Signpost Starting with / Turning to là bắt buộc.</div></div></section><section class="sec" id="s5"><div class="sec-head"><span class="no">5</span><h2>Checklist 4 tiêu chí (Band 8.0)</h2></div><div class="sec-body"><div class="check"><table><tr><th>Tiêu chí</th><th>Hành vi Band 8.0 cần đạt</th></tr><tr><td class="crit">TA</td><td>Overview PHỦ CẢ HAI biểu đồ, KHÔNG số · chọn lọc số đắt của từng biểu đồ <span class="band-tag">B8</span></td></tr><tr><td class="crit">CC</td><td>Signpost Starting with / Turning to rõ · mỗi biểu đồ một đoạn · liên kết hai biểu đồ ở overview <span class="band-tag">B8</span></td></tr><tr><td class="crit">LR</td><td>Dùng đúng kho từ cho từng loại (xu hướng cho chart thời gian, so sánh cho static) · albeit / respectively <span class="band-tag">B8</span></td></tr><tr><td class="crit">GRA</td><td>Thì khớp từng biểu đồ con · giới từ số liệu đúng · chấm phẩy + meanwhile nối hai biểu đồ <span class="band-tag">B8</span></td></tr></table></div><div class="key">🎯 <b>Tự soát nhanh:</b> Overview có nhắc CẢ HAI biểu đồ chưa? · Có signpost chuyển chart chưa? · Có lẫn trend vào chart tĩnh không?</div></div></section>
+</main></body></html>
